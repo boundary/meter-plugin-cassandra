@@ -1,0 +1,88 @@
+{
+    "name" : "Boundary Cassandra Plugin",
+    "version" : "0.9.0",
+    "meterVersionRequired" : "4.2.0-611",
+    "unsupportedPlatforms" : [ ],
+    "tags" : "cassandra", 
+    "description": "Monitors Cassandra",
+    "command_lua" : "boundary-meter init.lua",
+    "postExtract_lua" : "",
+    "command": "",
+    "icon" : "icon.png",
+    "metrics" : [
+        "CASSANDRA_ACTIVE_COUNT",
+        "CASSANDRA_BLOOM_FILTER_FALSE_POSITIVES",
+        "CASSANDRA_BLOOM_FILTER_FALSE_RADIO",
+        "CASSANDRA_CAPACITY",
+        "CASSANDRA_COMPLETED_TASKS",
+        "CASSANDRA_COMPRESSION_RATIO",
+        "CASSANDRA_CURRENTLY_BLOCKED_TASKS",
+        "CASSANDRA_EXCEPTION_COUNT",
+        "CASSANDRA_HITS",
+        "CASSANDRA_LIVE_DISK_SPACED_USED",
+        "CASSANDRA_LIVE_SSTABLE_COUNT",
+        "CASSANDRA_LOAD",
+        "CASSANDRA_MAX_ROW_SIZE",
+        "CASSANDRA_MEAN_ROW_SIZE",
+	"CASSANDRA_MEMTABLE_COLUMNS_COUNT",
+	"CASSANDRA_MIN_ROW_SIZE",
+	"CASSANDRA_PENDING_TASKS",
+	"CASSANDRA_READ_COUNT",
+	"CASSANDRA_RECENT_HIT_RATE",
+	"CASSANDRA_REQUESTS",
+	"CASSANDRA_SIZE",
+	"CASSANDRA_TOTAL_BLOCKED_TASKS",
+	"CASSANDRA_TOTAL_DISK_SPACE_USED",
+	"CASSANDRA_TOTAL_READ_LATENCY_MICROS",
+	"CASSANDRA_UPDATE_INTERVAL",
+	"CASSANDRA_WRITE_COUNT"
+	],
+
+    "paramSchema": [
+        {
+            "title": "Host",
+            "name": "host",
+            "description": "The host of Cassandra JMX endpoint",
+            "type": "string",
+            "default": "localhost",
+            "required": true
+        },
+    	{
+		"title": "Port",
+		"name" : "port",
+		"description": "The port of Cassandra JMX endpoint",
+		"type" : "string",
+		"default": "",
+		"required" : true
+	},
+	{
+		"title" : "Username",
+		"name" : "username",
+		"description": "The username of Cassandra JMX endpoint",
+		"type" : "string",
+		"default" : "",
+		"required": false
+	},
+	{	
+		"title" : "Password",
+		"name" : "password",
+		"description" : "The password of Cassandra JMX endpoint",
+		"default" : "",
+		"required" : false
+	},
+        {
+            "title": "Poll Interval (ms)",
+            "name": "pollInterval",
+            "description": "How often should the plugin poll (in milliseconds) for metrics.",
+            "type" : "integer",
+            "default" : 1000 
+        },
+        {
+            "title" : "Source",
+            "name" : "source",
+            "description" : "The Source to display in the legend for the metrics data.  It will default to the hostname of the server",
+            "type" : "string",
+	    "required" : false
+        }
+    ]
+}
