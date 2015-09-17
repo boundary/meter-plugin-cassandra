@@ -51,7 +51,7 @@
 		"title": "Port",
 		"name" : "port",
 		"description": "The port of Cassandra JMX endpoint",
-		"type" : "string",
+		"type" : "integer",
 		"default": "",
 		"required" : true
 	},

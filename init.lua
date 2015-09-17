@@ -15,10 +15,32 @@
 local framework = require('framework')
 local Plugin = framework.Plugin
 local DataSource = framework.DataSource
+local CommandOutputDataSource = framework.CommandOutputDataSource
 local params = framework.params
+local clone = framework.table.clone
+local os = require('os')
 
-local dataSource = DataSource:new(function ()
-  return -1
-end);
+local JMXDataSource = CommandOutputDataSource:extend()
+function JMXDataSource:initialize(options)
+  options.path = 'java'
+  options.use_popen = true
+  local args  = ('-jar jmxquery.jar -U "service:jmx:rmi:///jndi/rmi://%s:%d/jmxrmi"'):format(options.host, options.port)
+  options.args = { args .. ' -O "java.lang:type=Memory" -A "NonHeapMemoryUsage" -K used' }
+  CommandOutputDataSource.initialize(self, options)
+end
+
+local options = clone(params)
+
+
+
+
+
+local dataSource = JMXDataSource:new(options)
 local plugin = Plugin:new(params, dataSource)
+
+function plugin:onParseValues(data)
+  p(data.output, os.time())
+end
+
 plugin:run()
+
