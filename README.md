@@ -1,4 +1,4 @@
-# boundary-plugin-cassandra
+# TrueSight Pulse Cassandra Plugin 
 
 Collects metrics from a Cassandra instance
 
