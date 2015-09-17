@@ -1,10 +1,6 @@
-boundary-plugin-cassandra
-=========================
+# boundary-plugin-cassandra
 
 Collects metrics from a Cassandra instance
-
-
-### Metrics Collected
 
 ### Prerequisites
 
