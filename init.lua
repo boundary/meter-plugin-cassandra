@@ -23,13 +23,16 @@ local split = framework.string.split
 local notEmpty = framework.string.notEmpty
 local pack = framework.util.pack
 local ipack = framework.util.ipack
-local os = require('os')
 
 local JMXDataSource = CommandOutputDataSource:extend()
 function JMXDataSource:initialize(options)
   options.path = 'java'
   options.use_popen = true
   local args  = ('-jar jmxquery.jar -U "service:jmx:rmi:///jndi/rmi://%s:%d/jmxrmi"'):format(options.host, options.port)
+  if notEmpty(options.username) and notEmty(options.password) then
+    local auth = ('-username "%s" -password "%s"'):format(options.username, options.password)
+    args = args .. auth
+  end
   local mbeans = table.concat(options.mbeans, ';') 
   options.args = { args .. ' -O "java.lang:type=Memory" -A "NonHeapMemoryUsage" -K committed -X "' .. mbeans .. '"' }
 
@@ -37,14 +40,40 @@ function JMXDataSource:initialize(options)
 end
 
 local options = clone(params)
-options.mbeans = {
-   'java.lang:type=Memory|NonHeapMemoryUsage|used',
-   'java.lang:type=Memory|NonHeapMemoryUsage|init',
-   'java.lang:type=Memory|NonHeapMemoryUsage|max'
+local metric_mapping = {
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_ACTIVE_COUNT",
+  ['org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Latency.Mean'] = "CASSANDRA_BLOOM_FILTER_FALSE_POSITIVE",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_BLOOM_FILTER_FALSE_RADIO",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_CAPACITY",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_COMPLETED_TASKS",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_COMPRESSION_RATIO",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_CURRENTLY_BLOCKED_TASKS",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_EXCEPTION_COUNT",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_HITS",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_LIVE_DISK_SPACED_USED",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_LIVE_SSTABLE_COUNT",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_LOADC",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_MAX_ROW_SIZE",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_MEAN_ROW_SIZE",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_MEMTABLE_COLUMNS_COUNT",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_MIN_ROW_SIZE",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_PENDING_TASKS",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_READ_COUNT",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_RECENT_HIT_RATE",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_REQUESTS",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_SIZE",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_TOTAL_BLOCKED_TASKS",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_TOTAL_DISK_SPACE_USED",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_TOTAL_READ_LATENCY_MICROS",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_UPDATE_INTERVAL",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_WRITE_COUNT",
 }
 
-local metric_mapping = {
-}
+local mbeans = {}
+for k, _ in pairs(metric_mapping) do
+  table.insert(mbeans, k)
+end
+options.mbeans = mbeans
 
 local dataSource = JMXDataSource:new(options)
 local plugin = Plugin:new(params, dataSource)
@@ -54,8 +83,11 @@ function plugin:onParseValues(data)
   local lines = split(data.output, '\n');
   for _, l in pairs(lines) do
     if notEmpty(l) then
-      local metric, value = l:match('JMX OK%s*-%s*([%p%w]+)=(%d+) ')
-      ipack(result, metric, value)
+      local metric, value = l:match('JMX OK%s*-%s*([%p%w]+)%s([%d.?]+)$')
+      local boundary_metric = metric_mapping[metric] 
+      if boundary_metric then
+        ipack(result, boundary_metric, value)
+      end
     end
   end
   return result
