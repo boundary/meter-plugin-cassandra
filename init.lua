@@ -14,14 +14,11 @@
 
 local framework = require('framework')
 local Plugin = framework.Plugin
-local DataSource = framework.DataSource
 local CommandOutputDataSource = framework.CommandOutputDataSource
 local params = framework.params
 local clone = framework.table.clone
-local gsplit = framework.string.gsplit
 local split = framework.string.split
 local notEmpty = framework.string.notEmpty
-local pack = framework.util.pack
 local ipack = framework.util.ipack
 
 local JMXDataSource = CommandOutputDataSource:extend()
@@ -29,7 +26,7 @@ function JMXDataSource:initialize(options)
   options.path = 'java'
   options.use_popen = true
   local args  = ('-jar jmxquery.jar -U "service:jmx:rmi:///jndi/rmi://%s:%d/jmxrmi"'):format(options.host, options.port)
-  if notEmpty(options.username) and notEmty(options.password) then
+  if notEmpty(options.username) and notEmpty(options.password) then
     local auth = ('-username "%s" -password "%s"'):format(options.username, options.password)
     args = args .. auth
   end
