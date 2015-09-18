@@ -52,7 +52,7 @@
 		"name" : "port",
 		"description": "The port of Cassandra JMX endpoint",
 		"type" : "integer",
-		"default": "",
+		"default": 7199,
 		"required" : true
 	},
 	{
