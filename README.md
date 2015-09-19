@@ -15,53 +15,39 @@ Collects metrics from a Cassandra instance
 
 ### Plugin Setup
 
-In order for the plugin to collect statistics from Cassandra you must enable the JMX metrics.
+In order for the plugin to collect statistics from Cassandra you must enable the JMX endpoint.
 
 ### Plugin Configuration Fields
 
 |Field Name    | Description                                                                                              |
 |:-------------|:---------------------------------------------------------------------------------------------------------|
-| Source        | The Source to display in the legend for the haproxy data.  It will default to the hostname of the server.|
-| Statistics URL| The URL endpoint of where the elasticsearch statistics are hosted.                                       |
-| Poll Interval | How often should the plugin poll for metrics.                                                            |
+| Host          | Host of the Cassandra JMX endpoint                |
+| Port          | Port of the Cassandra JMX endpoint. Defaults to 7199         |
+| Username      | Username to access the Cassandra JMX endpoint |
+| Password      | Password to access the Cassandra JMX endpoint |
+| Source        | The Source to display in the legend for the metrics data.  It will default to the hostname of the server.|
+| Poll Interval | How often should the plugin poll for metrics. |
 
 ### Metrics Collected
 
 |Metric Name                                   |Description                                                               |
 |:---------------------------------------------|:-------------------------------------------------------------------------|
-| ActiveCount | 
-| BloomFilterDiskSpaceUsed |
-| BloomFilterFalsePositives |
-| BloomFilterFalseRatio |
-| Capacity |
-| CompletedTasks |
-| CompletedTasks |
-| CompressionRatio | 
-| CurrentlyBlockedTasks |
-| ExceptionCount |
-| Hits |
-| LiveDiskSpaceUsed |
-| LiveSSTableCount |
-| Load |
-| MaxRowSize |
-| MeanRowSize |
-| MemtableColumnsCount |
-| MemtableDataSize |
-| MemtableSwitchCount |
-| MinRowSize |
-| PendingTasks |
-| ReadCount |
-| RecentHitRate |
-| Requests |
-| Size |
-| TotalBlockedTasks |
-| TotalDiskSpaceUsed |
-| TotalReadLatencyMicros |
-| TotalTimeouts |
-| TotalWriteLatencyMicros |
-| UpdateInterval |
-| WriteCount |
-
+|  CASSANDRA_COMPACTION_PENDING_TASKS | Number of estimated compating tasks remaining to perform |
+| CASSANDRA_COMPACTION_COMPLETED_TASKS | Number of completed compactions since the last start of this Cassandra instance | 
+| CASSANDRA_COMPACTION_TOTAL_COMPLETED_RATE |
+| CASSANDRA_COMPACTION_BYTES_COMPACTED | The progress of the current compaction. This attribute is null if no compactions are in progress. |
+| CASSANDRA_CACHE_KEYCACHE_HITRATE |
+| CASSANDRA_CACHE_KEYCACHE_REQUESTS_RATE |
+| CASSANDRA_CACHE_KEYCACHE_ENTRIES |
+| CASSANDRA_CACHE_KEYCACHE_SIZE |
+| CASSANDRA_NET_TOTAL_TIMEOUTS |
+| CASSANDRA_WRITE_LATENCY_MEAN |
+| CASSANDRA_WRITE_FAILURES_RATE
+| CASSANDRA_WRITE_TIMEOUTS_RATE
+| CASSANDRA_READ_LATENCY_MEAN
+| CASSANDRA_READ_FAILURES_RATE
+| CASSANDRA_READ_TIMEOUTS_RATE
+| CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS |
 
 ### Dashboards
 

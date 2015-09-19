@@ -38,7 +38,23 @@ end
 
 local options = clone(params)
 local metric_mapping = {
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_ACTIVE_COUNT",
+  ['org.apache.cassandra.metrics:type=Compaction,name=PendingTasks.Value'] = "CASSANDRA_COMPACTION_PENDING_TASKS",
+  ['org.apache.cassandra.metrics:type=Compaction,name=CompletedTasks.Value'] = "CASSANDRA_COMPACTION_COMPLETED_TASKS",
+  ['org.apache.cassandra.metrics:type=Compaction,name=TotalCompactionsCompleted.MeanRate'] = "CASSANDRA_COMPACTION_TOTAL_COMPLETED_RATE",
+  ['org.apache.cassandra.metrics:type=Compaction,name=BytesCompacted.Count'] = "CASSANDRA_COMPACTION_BYTES_COMPACTED",
+  ['org.apache.cassandra.metrics:type=Cache,scope=KeyCache,name=HitRate.Value'] = "CASSANDRA_CACHE_KEYCACHE_HITRATE",
+  ['org.apache.cassandra.metrics:type=Cache,scope=KeyCache,name=Requests.MeanRate'] = "CASSANDRA_CACHE_KEYCACHE_REQUESTS_RATE",
+  ['org.apache.cassandra.metrics:type=Cache,scope=KeyCache,name=Entries.Value'] = "CASSANDRA_CACHE_KEYCACHE_ENTRIES",
+  ['org.apache.cassandra.metrics:type=Cache,scope=KeyCache,name=Size.Value'] = "CASSANDRA_CACHE_KEYCACHE_SIZE",
+  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_NET_TOTAL_TIMEOUTS",
+  ['org.apache.cassandra.metrics:type=ClientRequest,scope=Write,name=Latency.Mean'] = "CASSANDRA_WRITE_LATENCY_MEAN",
+  ['org.apache.cassandra.metrics:type=ClientRequest,scope=Write,name=Failures.MeanRate'] = "CASSANDRA_WRITE_FAILURES_RATE",
+  ['org.apache.cassandra.metrics:type=ClientRequest,scope=Write,name=Timeouts.MeanRate'] = "CASSANDRA_WRITE_TIMEOUTS_RATE",
+  ['org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Latency.Mean'] = "CASSANDRA_READ_LATENCY_MEAN",
+  ['org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Failures.MeanRate'] = "CASSANDRA_READ_FAILURES_RATE",
+  ['org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Timeouts.MeanRate'] = "CASSANDRA_READ_TIMEOUTS_RATE",
+  ['org.apache.cassandra.metrics:type=Client,name=connectedThriftClients.Value'] = "CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS",
+--[[
   ['org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Latency.Mean'] = "CASSANDRA_BLOOM_FILTER_FALSE_POSITIVE",
   ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_BLOOM_FILTER_FALSE_RADIO",
   ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_CAPACITY",
@@ -64,6 +80,7 @@ local metric_mapping = {
   ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_TOTAL_READ_LATENCY_MICROS",
   ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_UPDATE_INTERVAL",
   ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_WRITE_COUNT",
+]]
 }
 
 local mbeans = {}

@@ -1,234 +1,122 @@
 {
-  "COUCHBASE_ACTIVE_CONNECTIONS": {
+  "CASSANDRA_COMPACTION_PENDING_TASKS": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Number of currently active connections established with this node.",
-    "displayName": "Couchbase Active Connections",
-    "displayNameShort": "CB Conn",
+    "description": "",
+    "displayName": "",
+    "displayNameShort": "",
     "unit": "number"
   },
-  "COUCHBASE_CAS_HITS": {
-    "defaultAggregate": "sum",
-    "defaultResolutionMS": 1000,
-    "description": "Number of successful CAS comparisons.",
-    "displayName": "Couchbase CAS Hits",
-    "displayNameShort": "CB CAS Hit",
-    "unit": "number"
-  },
-  "COUCHBASE_CAS_MISSES": {
-    "defaultAggregate": "sum",
-    "defaultResolutionMS": 1000,
-    "description": "Number of unsuccessful CAS comparisons.",
-    "displayName": "Couchbase CAS Misses",
-    "displayNameShort": "CB CAS Miss",
-    "unit": "number"
-  },
-  "COUCHBASE_CPU_USAGE_RATE": {
-    "defaultAggregate": "avg",
-    "defaultResolutionMS": 1000,
-    "description": "CPU utilization percent.",
-    "displayName": "Couchbase CPU Usage Rate",
-    "displayNameShort": "CB CPU Usage",
-    "unit": "percent"
-  },
-  "COUCHBASE_DISK_COMMIT_TIME": {
-    "defaultAggregate": "avg",
-    "defaultResolutionMS": 1000,
-    "description": "Average time for disk commit operations on this node.",
-    "displayName": "Couchbase Disk Commit Time",
-    "displayNameShort": "CB DISK Commit",
-    "unit": "duration"
-  },
-  "COUCHBASE_DISK_FETCHES": {
-    "defaultAggregate": "sum",
-    "defaultResolutionMS": 1000,
-    "description": "Number of times Couchbase went to disk to get data (non-resident data) per second.",
-    "displayName": "Couchbase DIsk Fetches",
-    "displayNameShort": "CB DISK Fetch",
-    "unit": "number"
-  },
-  "COUCHBASE_DISK_UPDATE_TIME": {
-    "defaultAggregate": "avg",
-    "defaultResolutionMS": 1000,
-    "description": "Average time for disk update operations on this node.",
-    "displayName": "Couchbase Disk Update Time",
-    "displayNameShort": "CB DISK Update",
-    "unit": "duration"
-  },
-  "COUCHBASE_DOCUMENTS_COUNT": {
+  "CASSANDRA_COMPACTION_COMPLETED_TASKS": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Number of documents stored on this node.",
-    "displayName": "Couchbase Documents Count",
-    "displayNameShort": "CB DOC Count",
+    "description": "",
+    "displayName": "",
+    "displayNameShort": "",
     "unit": "number"
   },
-  "COUCHBASE_DOCUMENTS_FRAGMENTATION": {
-    "defaultAggregate": "avg",
-    "defaultResolutionMS": 1000,
-    "description": "Rate of fragmentation of document data.",
-    "displayName": "Couchbase Documents Fragmentation",
-    "displayNameShort": "CB DOC Frag",
-    "unit": "percent"
-  },
-  "COUCHBASE_DOCUMENTS_SIZE": {
-    "defaultAggregate": "avg",
-    "defaultResolutionMS": 1000,
-    "description": "Size of the data in the documents stored on this node.",
-    "displayName": "Couchbase Documents Size",
-    "displayNameShort": "CB DOC Size",
-    "unit": "bytecount"
-  },
-  "COUCHBASE_DOCUMENTS_SIZE_ON_DISK": {
-    "defaultAggregate": "avg",
-    "defaultResolutionMS": 1000,
-    "description": "Size on disk of the documents stored on this node.",
-    "displayName": "Couchbase Documents Size-on-Disk",
-    "displayNameShort": "CB DOC Disk Size",
-    "unit": "bytecount"
-  },
-  "COUCHBASE_EVICTIONS": {
-    "defaultAggregate": "sum",
-    "defaultResolutionMS": 1000,
-    "description": "Number of times COuchbase evicted data from the resident memory to free-up space.",
-    "displayName": "Couchbase Evictions",
-    "displayNameShort": "CB Evict",
-    "unit": "number"
-  },
-  "COUCHBASE_MAJOR_FAULTS": {
-    "defaultAggregate": "sum",
-    "defaultResolutionMS": 1000,
-    "description": "Number of major faults on this node.",
-    "displayName": "Couchbase Major Faults",
-    "displayNameShort": "CB FAULT Maj",
-    "unit": "number"
-  },
-  "COUCHBASE_MINOR_FAULTS": {
-    "defaultAggregate": "sum",
-    "defaultResolutionMS": 1000,
-    "description": "Number of minor faults on this node.",
-    "displayName": "Couchbase Minor Faults",
-    "displayNameShort": "CB FAULT Min",
-    "unit": "number"
-  },
-  "COUCHBASE_MISSES": {
-    "defaultAggregate": "sum",
-    "defaultResolutionMS": 1000,
-    "description": "Number of operations on missing documents.",
-    "displayName": "Couchbase Misses",
-    "displayNameShort": "CB DOC Miss",
-    "unit": "number"
-  },
-  "COUCHBASE_OPERATIONS": {
+  "CASSANDRA_COMPACTION_TOTAL_COMPLETED_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Number of currently on-going operations on this node.",
-    "displayName": "Couchbase Operations",
-    "displayNameShort": "CB Ops",
+    "description": "",
+    "displayName": "",
+    "displayNameShort": "",
     "unit": "number"
   },
-  "COUCHBASE_PAGE_FAULTS": {
-    "defaultAggregate": "sum",
+  "CASSANDRA_CACHE_KEYCACHE_HITRATE": {
+    "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Number of memory page faults on this node.",
-    "displayName": "Couchbase Page Faults",
-    "displayNameShort": "CB FAULT Page",
+    "description": "",
+    "displayName": "",
+    "displayNameShort": "",
     "unit": "number"
   },
-  "COUCHBASE_RAM_QUOTA_TOTAL": {
+  "CASSANDRA_CACHE_KEYCACHE_REQUESTS_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Total quota of memory allocated by the Couchbase cluster for this node.",
-    "displayName": "Couchbase Total RAM Quota",
-    "displayNameShort": "CB Quota RAM",
-    "unit": "bytecount"
-  },
-  "COUCHBASE_RAM_QUOTA_USED": {
-    "defaultAggregate": "avg",
-    "defaultResolutionMS": 1000,
-    "description": "Amount of memory used on this node by Couchbase from the allocated quota.",
-    "displayName": "Couchbase Used RAM Quota",
-    "displayNameShort": "CB Quota RAM Used",
-    "unit": "bytecount"
-  },
-  "COUCHBASE_RAM_SYSTEM_FREE": {
-    "defaultAggregate": "avg",
-    "defaultResolutionMS": 1000,
-    "description": "Amount of memory used on this node as reported by Couchbase.",
-    "displayName": "Couchbase Available RAM on System",
-    "displayNameShort": "CB System RAM Free",
-    "unit": "bytecount"
-  },
-  "COUCHBASE_RAM_SYSTEM_TOTAL": {
-    "defaultAggregate": "avg",
-    "defaultResolutionMS": 1000,
-    "description": "Total amount of memory on this node as reported by Couchbase.",
-    "displayName": "Couchbase Total RAM on System",
-    "displayNameShort": "CB System RAM",
-    "unit": "bytecount"
-  },
-  "COUCHBASE_REPLICATION_CHANGES_LEFT": {
-    "defaultAggregate": "avg",
-    "defaultResolutionMS": 1000,
-    "description": "Number of replication operations queued and yet to be performed.",
-    "displayName": "Couchbase Replication Changes Remaining",
-    "displayNameShort": "CB REPL Left",
+    "description": "",
+    "displayName": "",
+    "displayNameShort": "",
     "unit": "number"
   },
-  "COUCHBASE_SWAP_TOTAL": {
+  "CASSANDRA_CACHE_KEYCACHE_ENTRIES": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Total swap space on this node as reported by Couchbase.",
-    "displayName": "Couchbase Available Swap on System",
-    "displayNameShort": "CB SWAP Total",
-    "unit": "bytecount"
-  },
-  "COUCHBASE_SWAP_USED": {
-    "defaultAggregate": "avg",
-    "defaultResolutionMS": 1000,
-    "description": "Used swap space on this node as reported by Couchbase.",
-    "displayName": "Couchbase Used Swap on System",
-    "displayNameShort": "CB SWAP Used",
-    "unit": "bytecount"
-  },
-  "COUCHBASE_VIEWS_FRAGMENTATION": {
-    "defaultAggregate": "avg",
-    "defaultResolutionMS": 1000,
-    "description": "Rate of fragmentation of views data (i.e. indexes).",
-    "displayName": "Couchbase Views Fragmentation",
-    "displayNameShort": "CB VIEW Frag",
-    "unit": "percent"
-  },
-  "COUCHBASE_VIEWS_OPERATIONS": {
-    "defaultAggregate": "max",
-    "defaultResolutionMS": 1000,
-    "description": "Number of currently on-going views-related operations on this node (e.g. queries).",
-    "displayName": "Couchbase Views Operations",
-    "displayNameShort": "CB VIEW Ops",
+    "description": "",
+    "displayName": "",
+    "displayNameShort": "",
     "unit": "number"
   },
-  "COUCHBASE_VIEWS_SIZE": {
-    "defaultAggregate": "avg",
-    "defaultResolutionMS": 1000,
-    "description": "Size of the data in the indexed views on this node.",
-    "displayName": "Couchbase Views Size",
-    "displayNameShort": "CB VIEW Size",
-    "unit": "bytecount"
-  },
-  "COUCHBASE_VIEWS_SIZE_ON_DISK": {
+  "CASSANDRA_CACHE_KEYCACHE_SIZE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Size on disk of the indexed views on this node.",
-    "displayName": "Couchbase Views Size-on-Disk",
-    "displayNameShort": "CB VIEW Disk Size",
-    "unit": "bytecount"
+    "description": "",
+    "displayName": "",
+    "displayNameShort": "",
+    "unit": "number"
   },
-  "COUCHBASE_XDCR_OPERATIONS": {
-    "defaultAggregate": "sum",
+  "CASSANDRA_NET_TOTAL_TIMEOUTS": {
+    "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cross-datacenter replication operations on this node.",
-    "displayName": "Couchbase XDCR Operations",
-    "displayNameShort": "CB XDCR Ops",
+    "description": "",
+    "displayName": "",
+    "displayNameShort": "",
+    "unit": "number"
+  },
+  "CASSANDRA_WRITE_LATENCY_MEAN": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "",
+    "displayName": "",
+    "displayNameShort": "",
+    "unit": "number"
+  },
+  "CASSANDRA_WRITE_FAILURES_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "",
+    "displayName": "",
+    "displayNameShort": "",
+    "unit": "number"
+  },
+  "CASSANDRA_WRITE_TIMEOUTS_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "",
+    "displayName": "",
+    "displayNameShort": "",
+    "unit": "number"
+  },
+  "CASSANDRA_READ_LATENCY_MEAN": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "",
+    "displayName": "",
+    "displayNameShort": "",
+    "unit": "number"
+  },
+  "CASSANDRA_READ_FAILURES_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "",
+    "displayName": "",
+    "displayNameShort": "",
+    "unit": "number"
+  },
+  "CASSANDRA_READ_TIMEOUTS_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "",
+    "displayName": "",
+    "displayNameShort": "",
+    "unit": "number"
+  },
+  "CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "",
+    "displayName": "",
+    "displayNameShort": "",
     "unit": "number"
   }
 }
