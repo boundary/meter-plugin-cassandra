@@ -54,33 +54,6 @@ local metric_mapping = {
   ['org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Failures.MeanRate'] = "CASSANDRA_READ_FAILURES_RATE",
   ['org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Timeouts.MeanRate'] = "CASSANDRA_READ_TIMEOUTS_RATE",
   ['org.apache.cassandra.metrics:type=Client,name=connectedThriftClients.Value'] = "CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS",
---[[
-  ['org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Latency.Mean'] = "CASSANDRA_BLOOM_FILTER_FALSE_POSITIVE",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_BLOOM_FILTER_FALSE_RADIO",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_CAPACITY",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_COMPLETED_TASKS",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_COMPRESSION_RATIO",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_CURRENTLY_BLOCKED_TASKS",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_EXCEPTION_COUNT",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_HITS",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_LIVE_DISK_SPACED_USED",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_LIVE_SSTABLE_COUNT",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_LOADC",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_MAX_ROW_SIZE",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_MEAN_ROW_SIZE",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_MEMTABLE_COLUMNS_COUNT",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_MIN_ROW_SIZE",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_PENDING_TASKS",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_READ_COUNT",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_RECENT_HIT_RATE",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_REQUESTS",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_SIZE",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_TOTAL_BLOCKED_TASKS",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_TOTAL_DISK_SPACE_USED",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_TOTAL_READ_LATENCY_MICROS",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_UPDATE_INTERVAL",
-  ['org.apache.cassandra.net:type=MessagingService.TotalTimeouts'] = "CASSANDRA_WRITE_COUNT",
-]]
 }
 
 local mbeans = {}
