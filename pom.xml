@@ -4,6 +4,20 @@
   <artifactId>cassandra-plugin</artifactId>
   <version>0.9.0</version>
 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.4.0</version>
+        <configuration>
+          <classpathScope>compile</classpathScope>
+          <mainClass>com.truesightpulse.plugin.Cassandra</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
   <dependencies>
     <dependency>
       <groupId>com.boundary</groupId>
@@ -13,4 +27,5 @@
       <systemPath>${project.basedir}/src/main/resources/java-plugin-sdk-0.6.0-jar-with-dependencies.jar</systemPath>
     </dependency>
   </dependencies>
+
 </project>
