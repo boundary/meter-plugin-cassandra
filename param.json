@@ -1,8 +1,7 @@
 {
-	"source" : "cassandra",
-	"host" : "localhost",
-	"port" : 7199,
-	"username" : "",
-	"password" : "",
-	"pollInterval" : 1000
+	"items" : [
+		{ "name" : "item1",
+		  "source" : "source1"
+		}
+	]
 }
