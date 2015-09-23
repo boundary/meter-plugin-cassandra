@@ -18,7 +18,7 @@ Collects metrics from a Cassandra instances
 
 ### Plugin Setup
 
-In order for the plugin to collect statistics from Cassandra you ensure that JMX endpoint is operational. By default Cassandra listens on 7199 of your localhost.
+In order for the plugin to collect statistics from Cassandra you need to ensure that JMX endpoint is operational. By default Cassandra listens on 7199 of your localhost.
 
 ### Plugin Configuration Fields
 
