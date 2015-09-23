@@ -73,6 +73,7 @@
         "name" : "password",
         "description" : "The password of Cassandra JMX endpoint",
         "default" : "",
+        "type" : "password",
         "required" : false
     },
     {
@@ -87,6 +88,7 @@
         "name" : "source",
         "description" : "The Source to display in the legend for the metrics data.  It will default to the hostname of the server",
         "type" : "string",
+        "default" : "",
         "required" : false
     }]
 }
