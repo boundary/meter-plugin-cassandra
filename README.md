@@ -1,12 +1,15 @@
 # TrueSight Pulse Cassandra Plugin 
 
-Collects metrics from a Cassandra instance
+Collects metrics from a Cassandra instances
 
 ### Prerequisites
 
 |     OS    | Linux | Windows | SmartOS | OS X |
 |:----------|:-----:|:-------:|:-------:|:----:|
 | Supported |   v   |    v    |    v    |  v   |
+
+* Java 1.7 or later.
+* This plugin is compatiable with Cassandra 2.1 or later.
 
 #### Boundary Meter versions v4.2 or later
 
@@ -15,7 +18,7 @@ Collects metrics from a Cassandra instance
 
 ### Plugin Setup
 
-In order for the plugin to collect statistics from Cassandra you must enable the JMX endpoint.
+In order for the plugin to collect statistics from Cassandra you ensure that JMX endpoint is operational. By default Cassandra listens on 7199 of your localhost.
 
 ### Plugin Configuration Fields
 
@@ -32,7 +35,7 @@ In order for the plugin to collect statistics from Cassandra you must enable the
 
 |Metric Name                                   |Description                                                               |
 |:---------------------------------------------|:-------------------------------------------------------------------------|
-|  CASSANDRA_COMPACTION_PENDING_TASKS | Number of estimated compating tasks remaining to perform |
+|  CASSANDRA_COMPACTION_PENDING_TASKS | Number of estimated compaction tasks remaining to perform |
 | CASSANDRA_COMPACTION_COMPLETED_TASKS | Number of completed compactions since the last start of this Cassandra instance | 
 | CASSANDRA_COMPACTION_TOTAL_COMPLETED_RATE |
 | CASSANDRA_COMPACTION_BYTES_COMPACTED | The progress of the current compaction. This attribute is null if no compactions are in progress. |
@@ -55,4 +58,4 @@ In order for the plugin to collect statistics from Cassandra you must enable the
 
 ### References
 
-None
+http://docs.datastax.com/en/cassandra/2.0/cassandra/operations/ops_monitoring_c.html
