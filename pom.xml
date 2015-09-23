@@ -3,6 +3,9 @@
   <groupId>com.truesighpulse</groupId>
   <artifactId>cassandra-plugin</artifactId>
   <version>0.9.0</version>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 
   <build>
     <plugins>
