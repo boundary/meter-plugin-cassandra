@@ -2,105 +2,105 @@
   "CASSANDRA_COMPACTION_PENDING_TASKS": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "",
-    "displayNameShort": "",
+    "description": "Compaction Pending Tasks",
+    "displayName": "Compaction Pendings",
+    "displayNameShort": "Comp. Pendings",
     "unit": "number"
   },
   "CASSANDRA_COMPACTION_COMPLETED_TASKS": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "",
-    "displayNameShort": "",
+    "description": "Compaction Completed Tasks",
+    "displayName": "Compaction Completed",
+    "displayNameShort": "Comp. Completed",
     "unit": "number"
   },
   "CASSANDRA_COMPACTION_TOTAL_COMPLETED_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "",
-    "displayNameShort": "",
+    "description": "Compaction Completed Rate",
+    "displayName": "Compaction Rate",
+    "displayNameShort": "Comp. Completed Rate",
     "unit": "number"
   },
   "CASSANDRA_CACHE_KEYCACHE_HITRATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "",
-    "displayNameShort": "",
+    "description": "Cache KeyCache Hit Rate",
+    "displayName": "KeyCache Hit Rate",
+    "displayNameShort": "KeyCache Hit Rate",
     "unit": "number"
   },
   "CASSANDRA_CACHE_KEYCACHE_REQUESTS_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "",
-    "displayNameShort": "",
+    "description": "Cache KeyCache Requests Rate",
+    "displayName": "KeyCache Request Rate",
+    "displayNameShort": "KeyCache Req. Rate",
     "unit": "number"
   },
   "CASSANDRA_CACHE_KEYCACHE_ENTRIES": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "",
-    "displayNameShort": "",
+    "description": "Cache KeyCache Entries",
+    "displayName": "KeyCache Entries",
+    "displayNameShort": "KeyCache Entries",
     "unit": "number"
   },
   "CASSANDRA_CACHE_KEYCACHE_SIZE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "",
-    "displayNameShort": "",
+    "description": "Cache KeyCache Size",
+    "displayName": "KeyCache Size",
+    "displayNameShort": "KeyCache Size",
     "unit": "number"
   },
   "CASSANDRA_NET_TOTAL_TIMEOUTS": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "",
-    "displayNameShort": "",
+    "description": "Network Total Timeouts",
+    "displayName": "Network Total Timeouts",
+    "displayNameShort": "Net. Timeouts",
     "unit": "number"
   },
   "CASSANDRA_WRITE_LATENCY_MEAN": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "",
-    "displayNameShort": "",
+    "description": "Write Latency Mean",
+    "displayName": "Write Latency Mean",
+    "displayNameShort": "WR Latency",
     "unit": "number"
   },
   "CASSANDRA_WRITE_FAILURES_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "",
-    "displayNameShort": "",
+    "description": "Write Failures Rate",
+    "displayName": "Write Failures Rate",
+    "displayNameShort": "WR Failures",
     "unit": "number"
   },
   "CASSANDRA_WRITE_TIMEOUTS_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "",
-    "displayNameShort": "",
+    "description": "Write Timeouts Rate",
+    "displayName": "Write Timeouts Rate",
+    "displayNameShort": "WR Timeouts",
     "unit": "number"
   },
   "CASSANDRA_READ_LATENCY_MEAN": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "",
-    "displayNameShort": "",
+    "description": "Read Latency Mean",
+    "displayName": "Read Latency Mean",
+    "displayNameShort": "R Latency",
     "unit": "number"
   },
   "CASSANDRA_READ_FAILURES_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "",
-    "displayNameShort": "",
+    "description": "Read Failures Rate",
+    "displayName": "Read Failures Rate",
+    "displayNameShort": "R Failures",
     "unit": "number"
   },
   "CASSANDRA_READ_TIMEOUTS_RATE": {
@@ -114,9 +114,9 @@
   "CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "",
-    "displayNameShort": "",
+    "description": "Clients Connected Thrift",
+    "displayName": "Clients Connected Thrift",
+    "displayNameShort": "Clients Connected",
     "unit": "number"
   }
 }

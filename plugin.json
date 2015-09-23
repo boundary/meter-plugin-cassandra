@@ -5,9 +5,9 @@
     "unsupportedPlatforms" : [ ],
     "tags" : "cassandra", 
     "description": "Monitors Cassandra",
-    "command_lua" : "boundary-meter init.lua",
+    "command_lua" : "",
     "postExtract_lua" : "",
-    "command": "",
+    "command": "java -jar target/cassandra-plugin-0.9.0-full.jar",
     "icon" : "icon.png",
     "metrics" : [
 
@@ -27,8 +27,21 @@
 		"CASSANDRA_READ_TIMEOUTS_RATE",
 		"CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS",
 	],
-
+	"paramArray": {
+		"itemTitle": [
+	  	"host","port", "source"
+		],
+		"schemaTitle": "Instance"
+	},
     "paramSchema": [
+        {
+            "title": "Name",
+            "name": "name",
+            "description": "A name to identify the Cassandra instance.",
+            "type": "string",
+            "default": "localhost",
+            "required": true
+        },
         {
             "title": "Host",
             "name": "host",
@@ -38,32 +51,32 @@
             "required": true
         },
     	{
-		"title": "Port",
-		"name" : "port",
-		"description": "The port of Cassandra JMX endpoint",
-		"type" : "integer",
-		"default": 7199,
-		"required" : true
-	},
-	{
-		"title" : "Username",
-		"name" : "username",
-		"description": "The username of Cassandra JMX endpoint",
-		"type" : "string",
-		"default" : "",
-		"required": false
-	},
-	{	
-		"title" : "Password",
-		"name" : "password",
-		"description" : "The password of Cassandra JMX endpoint",
-		"default" : "",
-		"required" : false
-	},
+			"title": "Port",
+			"name" : "port",
+			"description": "The port of Cassandra JMX endpoint",
+			"type" : "integer",
+			"default": 7199,
+			"required" : true
+		},
+		{
+			"title" : "User",
+			"name" : "user",
+			"description": "The user of Cassandra JMX endpoint",
+			"type" : "string",
+			"default" : "",
+			"required": false
+		},
+		{	
+			"title" : "Password",
+			"name" : "password",
+			"description" : "The password of Cassandra JMX endpoint",
+			"default" : "",
+			"required" : false
+		},
         {
             "title": "Poll Interval (ms)",
             "name": "pollInterval",
-            "description": "How often should the plugin poll (in milliseconds) for metrics.",
+            "description": "How often (in milliseconds) to poll for metrics.",
             "type" : "integer",
             "default" : 1000 
         },
@@ -72,7 +85,7 @@
             "name" : "source",
             "description" : "The Source to display in the legend for the metrics data.  It will default to the hostname of the server",
             "type" : "string",
-	    "required" : false
+	    	"required" : false
         }
     ]
 }
