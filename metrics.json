@@ -106,9 +106,9 @@
   "CASSANDRA_READ_TIMEOUTS_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "",
-    "displayNameShort": "",
+    "description": "Read Timeouts Rate",
+    "displayName": "Read Timeouts Rate",
+    "displayNameShort": "R Timeouts",
     "unit": "number"
   },
   "CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS": {
