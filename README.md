@@ -9,7 +9,7 @@ Collects metrics from a Cassandra instances
 | Supported |   v   |    v    |    v    |  v   |
 
 * Java 1.7 or later.
-* This plugin is compatiable with Cassandra 2.1 or later.
+* This plugin is compatible with Cassandra 2.1 or later.
 
 #### Boundary Meter versions v4.2 or later
 
