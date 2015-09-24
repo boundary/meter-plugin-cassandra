@@ -3,7 +3,7 @@
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Compaction Pending Tasks",
-    "displayName": "Compaction Pendings",
+    "displayName": "Cassandra - Compaction Pendings",
     "displayNameShort": "Comp. Pendings",
     "unit": "number"
   },
@@ -11,7 +11,7 @@
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Compaction Completed Tasks",
-    "displayName": "Compaction Completed",
+    "displayName": "Cassandra - Compaction Completed",
     "displayNameShort": "Comp. Completed",
     "unit": "number"
   },
@@ -19,7 +19,7 @@
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Compaction Completed Rate",
-    "displayName": "Compaction Rate",
+    "displayName": "Cassandra - Compaction Rate",
     "displayNameShort": "Comp. Completed Rate",
     "unit": "number"
   },
@@ -27,7 +27,7 @@
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Cache KeyCache Hit Rate",
-    "displayName": "KeyCache Hit Rate",
+    "displayName": "Cassandra - KeyCache Hit Rate",
     "displayNameShort": "KeyCache Hit Rate",
     "unit": "number"
   },
@@ -35,7 +35,7 @@
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Cache KeyCache Requests Rate",
-    "displayName": "KeyCache Request Rate",
+    "displayName": "Cassandra - KeyCache Request Rate",
     "displayNameShort": "KeyCache Req. Rate",
     "unit": "number"
   },
@@ -43,7 +43,7 @@
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Cache KeyCache Entries",
-    "displayName": "KeyCache Entries",
+    "displayName": "Cassandra - KeyCache Entries",
     "displayNameShort": "KeyCache Entries",
     "unit": "number"
   },
@@ -51,7 +51,7 @@
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Cache KeyCache Size",
-    "displayName": "KeyCache Size",
+    "displayName": "Cassandra - KeyCache Size",
     "displayNameShort": "KeyCache Size",
     "unit": "number"
   },
@@ -59,7 +59,7 @@
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Network Total Timeouts",
-    "displayName": "Network Total Timeouts",
+    "displayName": "Cassandra - Network Total Timeouts",
     "displayNameShort": "Net. Timeouts",
     "unit": "number"
   },
@@ -67,7 +67,7 @@
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Write Latency Mean",
-    "displayName": "Write Latency Mean",
+    "displayName": "Cassandra - Write Latency Mean",
     "displayNameShort": "WR Latency",
     "unit": "number"
   },
@@ -75,7 +75,7 @@
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Write Failures Rate",
-    "displayName": "Write Failures Rate",
+    "displayName": "Cassandra - Write Failures Rate",
     "displayNameShort": "WR Failures",
     "unit": "number"
   },
@@ -83,7 +83,7 @@
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Write Timeouts Rate",
-    "displayName": "Write Timeouts Rate",
+    "displayName": "Cassandra - Write Timeouts Rate",
     "displayNameShort": "WR Timeouts",
     "unit": "number"
   },
@@ -91,7 +91,7 @@
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Read Latency Mean",
-    "displayName": "Read Latency Mean",
+    "displayName": "Cassandra - Read Latency Mean",
     "displayNameShort": "R Latency",
     "unit": "number"
   },
@@ -99,7 +99,7 @@
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Read Failures Rate",
-    "displayName": "Read Failures Rate",
+    "displayName": "Cassandra - Read Failures Rate",
     "displayNameShort": "R Failures",
     "unit": "number"
   },
@@ -107,7 +107,7 @@
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Read Timeouts Rate",
-    "displayName": "Read Timeouts Rate",
+    "displayName": "Cassandra - Read Timeouts Rate",
     "displayNameShort": "R Timeouts",
     "unit": "number"
   },
@@ -115,7 +115,7 @@
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Clients Connected Thrift",
-    "displayName": "Clients Connected Thrift",
+    "displayName": "Cassandra - Clients Connected Thrift",
     "displayNameShort": "Clients Connected",
     "unit": "number"
   }
