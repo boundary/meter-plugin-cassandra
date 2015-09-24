@@ -121,6 +121,66 @@
       "enabled": true
     },
     {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=RowCache,name=HitRate",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CACHE_ROWCACHE_HITRATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=RowCache,name=Requests",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CACHE_ROWCACHE_REQUESTS_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=RowCache,name=Entries",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "CASSANDRA_CACHE_ROWCACHE_ENTRIES",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=RowCache,name=Size",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "long",
+          "metricName": "CASSANDRA_CACHE_ROWCACHE_SIZE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
       "mbean": "org.apache.cassandra.net:type=MessagingService",
       "attributes": [
        	{
@@ -239,6 +299,37 @@
         }
         ],
       "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Storage,name=Load",
+      "attributes": [
+       	{
+          "attribute": "Count",
+          "dataType": "long",
+          "metricName": "CASSANDRA_STORAGE_LOAD_BYTES",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=CommitLog,name=TotalCommitLogSize",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "long",
+          "metricName": "CASSANDRA_STORAGE_COMMITLOG_SIZE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
     }
+
     ]
 }
