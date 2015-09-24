@@ -150,5 +150,22 @@
     "displayName": "Cassandra - Clients Connected Thrift",
     "displayNameShort": "Clients Connected",
     "unit": "number"
+  },
+  "CASSANDRA_STORAGE_LOAD_BYTES": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Storage Load Bytes",
+    "displayName": "Cassandra - Storage Load Bytes",
+    "displayNameShort": "Storage Load",
+    "unit": "bytecount"
+  },
+  "CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Storage Commitlog Size",
+    "displayName": "Cassandra - Storage Commitlog Size",
+    "displayNameShort": "Storage Commitlog",
+    "unit": "bytecount"
   }
+
 }

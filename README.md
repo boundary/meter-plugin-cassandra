@@ -55,6 +55,8 @@ In order for the plugin to collect statistics from Cassandra you need to ensure 
 | CASSANDRA_READ_FAILURES_RATE
 | CASSANDRA_READ_TIMEOUTS_RATE
 | CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS |
+| CASSANDRA_STORAGE_LOAD_BYTES |
+| CASSANDRA_STORAGE_COMMITLOG_SIZE |
 
 ### Dashboards
 
