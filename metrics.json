@@ -1,0 +1,122 @@
+{
+  "CASSANDRA_COMPACTION_PENDING_TASKS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Compaction Pending Tasks",
+    "displayName": "Cassandra - Compaction Pendings",
+    "displayNameShort": "Comp. Pendings",
+    "unit": "number"
+  },
+  "CASSANDRA_COMPACTION_COMPLETED_TASKS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Compaction Completed Tasks",
+    "displayName": "Cassandra - Compaction Completed",
+    "displayNameShort": "Comp. Completed",
+    "unit": "number"
+  },
+  "CASSANDRA_COMPACTION_TOTAL_COMPLETED_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Compaction Completed Rate",
+    "displayName": "Cassandra - Compaction Rate",
+    "displayNameShort": "Comp. Completed Rate",
+    "unit": "number"
+  },
+  "CASSANDRA_CACHE_KEYCACHE_HITRATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cache KeyCache Hit Rate",
+    "displayName": "Cassandra - KeyCache Hit Rate",
+    "displayNameShort": "KeyCache Hit Rate",
+    "unit": "number"
+  },
+  "CASSANDRA_CACHE_KEYCACHE_REQUESTS_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cache KeyCache Requests Rate",
+    "displayName": "Cassandra - KeyCache Request Rate",
+    "displayNameShort": "KeyCache Req. Rate",
+    "unit": "number"
+  },
+  "CASSANDRA_CACHE_KEYCACHE_ENTRIES": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cache KeyCache Entries",
+    "displayName": "Cassandra - KeyCache Entries",
+    "displayNameShort": "KeyCache Entries",
+    "unit": "number"
+  },
+  "CASSANDRA_CACHE_KEYCACHE_SIZE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cache KeyCache Size",
+    "displayName": "Cassandra - KeyCache Size",
+    "displayNameShort": "KeyCache Size",
+    "unit": "number"
+  },
+  "CASSANDRA_NET_TOTAL_TIMEOUTS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Network Total Timeouts",
+    "displayName": "Cassandra - Network Total Timeouts",
+    "displayNameShort": "Net. Timeouts",
+    "unit": "number"
+  },
+  "CASSANDRA_WRITE_LATENCY_MEAN": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Write Latency Mean",
+    "displayName": "Cassandra - Write Latency Mean",
+    "displayNameShort": "WR Latency",
+    "unit": "number"
+  },
+  "CASSANDRA_WRITE_FAILURES_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Write Failures Rate",
+    "displayName": "Cassandra - Write Failures Rate",
+    "displayNameShort": "WR Failures",
+    "unit": "number"
+  },
+  "CASSANDRA_WRITE_TIMEOUTS_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Write Timeouts Rate",
+    "displayName": "Cassandra - Write Timeouts Rate",
+    "displayNameShort": "WR Timeouts",
+    "unit": "number"
+  },
+  "CASSANDRA_READ_LATENCY_MEAN": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Read Latency Mean",
+    "displayName": "Cassandra - Read Latency Mean",
+    "displayNameShort": "R Latency",
+    "unit": "number"
+  },
+  "CASSANDRA_READ_FAILURES_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Read Failures Rate",
+    "displayName": "Cassandra - Read Failures Rate",
+    "displayNameShort": "R Failures",
+    "unit": "number"
+  },
+  "CASSANDRA_READ_TIMEOUTS_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Read Timeouts Rate",
+    "displayName": "Cassandra - Read Timeouts Rate",
+    "displayNameShort": "R Timeouts",
+    "unit": "number"
+  },
+  "CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Clients Connected Thrift",
+    "displayName": "Cassandra - Clients Connected Thrift",
+    "displayNameShort": "Clients Connected",
+    "unit": "number"
+  }
+}

@@ -1,0 +1,104 @@
+{
+    "name" : "TrueSight Pulse Cassandra Plugin",
+    "version" : "0.9.0",
+    "meterVersionRequired" : "4.2.0-611",
+    "unsupportedPlatforms" : [ ],
+    "tags" : "cassandra", 
+    "description": "Monitors Cassandra",
+    "command_lua" : "",
+    "postExtract_lua" : "",
+    "command": "java -jar target/cassandra-plugin-0.9.0-full.jar",
+    "postExtract" : "",
+    "ignore" : "",
+    "icon" : "icon.png",
+    "metrics" : [
+
+        "CASSANDRA_COMPACTION_PENDING_TASKS",
+        "CASSANDRA_COMPACTION_COMPLETED_TASKS",
+        "CASSANDRA_COMPACTION_TOTAL_COMPLETED_RATE",
+        "CASSANDRA_CACHE_KEYCACHE_HITRATE",
+        "CASSANDRA_CACHE_KEYCACHE_REQUESTS_RATE",
+        "CASSANDRA_CACHE_KEYCACHE_ENTRIES",
+        "CASSANDRA_CACHE_KEYCACHE_SIZE",
+        "CASSANDRA_NET_TOTAL_TIMEOUTS",
+        "CASSANDRA_WRITE_LATENCY_MEAN",
+        "CASSANDRA_WRITE_FAILURES_RATE",
+        "CASSANDRA_WRITE_TIMEOUTS_RATE",
+        "CASSANDRA_READ_LATENCY_MEAN",
+        "CASSANDRA_READ_FAILURES_RATE",
+        "CASSANDRA_READ_TIMEOUTS_RATE",
+        "CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS"
+    ],
+
+    "dashboards" : [ 
+         {
+            "name": "Cassandra",
+            "layout": "d-w=3&d-h=3&d-pad=5&d-light=0&d-bg=none&d-g-CASSANDRA_COMPACTION_TOTAL_COMPLETED_RATE=2-0-1-1&d-g-CASSANDRA_COMPACTION_COMPLETED_TASKS=1-0-1-1-t&d-g-CASSANDRA_COMPACTION_PENDING_TASKS=1-0-1-1-b&d-g-CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS=2-1-1-1&d-g-CASSANDRA_NET_TOTAL_TIMEOUTS=0-0-1-1&d-g-CASSANDRA_CACHE_KEYCACHE_ENTRIES=1-1-1-1-t&d-g-CASSANDRA_CACHE_KEYCACHE_SIZE=1-1-1-1-b&d-g-CASSANDRA_CACHE_KEYCACHE_REQUESTS_RATE=0-1-1-1-t&d-g-CASSANDRA_CACHE_KEYCACHE_HITRATE=0-1-1-1-b&d-g-CASSANDRA_READ_FAILURES_RATE=0-2-1-1-t&d-g-CASSANDRA_WRITE_FAILURES_RATE=0-2-1-1-b&d-g-CASSANDRA_READ_LATENCY_MEAN=1-2-1-1-t&d-g-CASSANDRA_WRITE_LATENCY_MEAN=1-2-1-1-b&d-g-CASSANDRA_READ_TIMEOUTS_RATE=2-2-1-1-t&d-g-CASSANDRA_WRITE_TIMEOUTS_RATE=2-2-1-1-b"
+        } 
+    ],
+
+    "paramArray": {
+        "itemTitle": [
+        "host","port", "source"
+        ],
+        "schemaTitle": "Instance"
+    },
+
+    "paramSchema": [
+    {
+        "title": "Name",
+        "name": "name",
+        "description": "A name to identify the Cassandra instance.",
+        "type": "string",
+        "default": "cassandra",
+        "required": true
+    },
+    {
+        "title": "Host",
+        "name": "host",
+        "description": "The host of Cassandra JMX endpoint",
+        "type": "string",
+        "default": "127.0.0.1",
+        "required": true
+    },
+    {
+        "title": "Port",
+        "name" : "port",
+        "description": "The port of Cassandra JMX endpoint",
+        "type" : "integer",
+        "default": 7199,
+        "required" : true
+    },
+    {
+        "title" : "User",
+        "name" : "user",
+        "description": "The user of Cassandra JMX endpoint",
+        "type" : "string",
+        "default" : "",
+        "required": false
+    },
+    {   
+        "title" : "Password",
+        "name" : "password",
+        "description" : "The password of Cassandra JMX endpoint",
+        "default" : "",
+        "type" : "password",
+        "required" : false
+    },
+    {
+        "title": "Poll Interval (ms)",
+        "name": "pollInterval",
+        "description": "How often (in milliseconds) to poll for metrics.",
+        "type" : "integer",
+        "default" : 1000,
+        "required" : true
+    },
+    {
+        "title" : "Source",
+        "name" : "source",
+        "description" : "The Source to display in the legend for the metrics data.  It will default to the hostname of the server",
+        "type" : "string",
+        "default" : "",
+        "required" : false
+    }]
+}

@@ -1,0 +1,244 @@
+{
+  "map": [
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Compaction,name=PendingTasks",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "CASSANDRA_COMPACTION_PENDING_TASKS",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Compaction,name=CompletedTasks",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "long",
+          "metricName": "CASSANDRA_COMPACTION_COMPLETED_TASKS",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Compaction,name=TotalCompactionsCompleted",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_COMPACTION_TOTAL_COMPLETED_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Compaction,name=BytesCompacted",
+      "attributes": [
+       	{
+          "attribute": "Count",
+          "dataType": "long",
+          "metricName": "CASSANDRA_COMPACTION_BYTES_COMPACTED",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=KeyCache,name=HitRate",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CACHE_KEYCACHE_HITRATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=KeyCache,name=Requests",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CACHE_KEYCACHE_REQUESTS_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=KeyCache,name=Entries",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "CASSANDRA_CACHE_KEYCACHE_ENTRIES",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=KeyCache,name=Size",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "long",
+          "metricName": "CASSANDRA_CACHE_KEYCACHE_SIZE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.net:type=MessagingService",
+      "attributes": [
+       	{
+          "attribute": "TotalTimeouts",
+          "dataType": "long",
+          "metricName": "CASSANDRA_NET_TOTAL_TIMEOUTS",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Write,name=Latency",
+      "attributes": [
+       	{
+          "attribute": "Mean",
+          "dataType": "double",
+          "metricName": "CASSANDRA_WRITE_LATENCY_MEAN",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Write,name=Failures",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_WRITE_FAILURES_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Write,name=Timeouts",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_WRITE_TIMEOUTS_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Latency",
+      "attributes": [
+       	{
+          "attribute": "Mean",
+          "dataType": "double",
+          "metricName": "CASSANDRA_READ_LATENCY_MEAN",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Failures",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_READ_FAILURES_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Timeouts",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_READ_TIMEOUTS_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Client,name=connectedThriftClients",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+	"items" : [
+		{
+			"name" : "cassandra-mbeans",
+			"user" : "",
+			"password" : "",
+			"host" : "localhost",
+			"port" : 7199,
+			"pollInterval" : 1000,
+			"source" : "cassandra"
+		}
+	],
+	"pollInterval" : 1000
+}
