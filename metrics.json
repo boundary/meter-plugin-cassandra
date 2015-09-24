@@ -53,7 +53,7 @@
     "description": "Cache KeyCache Size",
     "displayName": "Cassandra - KeyCache Size",
     "displayNameShort": "KeyCache Size",
-    "unit": "number"
+    "unit": "bytecount"
   },
   "CASSANDRA_NET_TOTAL_TIMEOUTS": {
     "defaultAggregate": "max",
