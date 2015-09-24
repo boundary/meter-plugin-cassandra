@@ -55,6 +55,38 @@
     "displayNameShort": "KeyCache Size",
     "unit": "bytecount"
   },
+  "CASSANDRA_CACHE_ROWCACHE_HITRATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cache RowCache Hit Rate",
+    "displayName": "Cassandra - RowCache Hit Rate",
+    "displayNameShort": "RowCache Hit Rate",
+    "unit": "number"
+  },
+  "CASSANDRA_CACHE_ROWCACHE_REQUESTS_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cache RowCache Requests Rate",
+    "displayName": "Cassandra - RowCache Request Rate",
+    "displayNameShort": "RowCache Req. Rate",
+    "unit": "number"
+  },
+  "CASSANDRA_CACHE_ROWCACHE_ENTRIES": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cache RowCache Entries",
+    "displayName": "Cassandra - RowCache Entries",
+    "displayNameShort": "RowCache Entries",
+    "unit": "number"
+  },
+  "CASSANDRA_CACHE_KEYCACHE_SIZE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cache RowCache Size",
+    "displayName": "Cassandra - RowCache Size",
+    "displayNameShort": "RowCache Size",
+    "unit": "bytecount"
+  },
   "CASSANDRA_NET_TOTAL_TIMEOUTS": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
