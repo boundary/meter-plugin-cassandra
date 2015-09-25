@@ -159,7 +159,7 @@
     "displayNameShort": "Storage Load",
     "unit": "bytecount"
   },
-  "CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS": {
+  "CASSANDRA_STORAGE_COMMITLOG_SIZE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Storage Commitlog Size",
