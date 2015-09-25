@@ -101,7 +101,7 @@
     "description": "Write Latency Mean",
     "displayName": "Cassandra - Write Latency Mean",
     "displayNameShort": "WR Latency",
-    "unit": "number"
+    "unit": "duration"
   },
   "CASSANDRA_WRITE_FAILURES_RATE": {
     "defaultAggregate": "max",
@@ -125,7 +125,7 @@
     "description": "Read Latency Mean",
     "displayName": "Cassandra - Read Latency Mean",
     "displayNameShort": "R Latency",
-    "unit": "number"
+    "unit": "duration"
   },
   "CASSANDRA_READ_FAILURES_RATE": {
     "defaultAggregate": "max",
@@ -159,7 +159,7 @@
     "displayNameShort": "Storage Load",
     "unit": "bytecount"
   },
-  "CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS": {
+  "CASSANDRA_STORAGE_COMMITLOG_SIZE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Storage Commitlog Size",

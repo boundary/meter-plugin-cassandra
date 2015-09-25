@@ -181,10 +181,10 @@
       "enabled": true
     },
     {
-      "mbean": "org.apache.cassandra.net:type=MessagingService",
+      "mbean": "org.apache.cassandra.metrics:type=Connection,name=TotalTimeouts",
       "attributes": [
        	{
-          "attribute": "TotalTimeouts",
+          "attribute": "Count",
           "dataType": "long",
           "metricName": "CASSANDRA_NET_TOTAL_TIMEOUTS",
           "key": "",
