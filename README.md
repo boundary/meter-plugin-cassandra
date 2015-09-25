@@ -60,7 +60,8 @@ In order for the plugin to collect statistics from Cassandra you need to ensure 
 
 ### Dashboards
 
-- Cassandra
+- Cassandra General
+- Cassandra Caches 
 
 ### References
 
