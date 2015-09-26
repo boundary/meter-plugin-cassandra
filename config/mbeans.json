@@ -204,7 +204,7 @@
           "metricName": "CASSANDRA_WRITE_LATENCY_MEAN",
           "key": "",
           "metricType": "standard",
-          "scale": 1,
+          "scale": 0.001,
           "enabled": true
         }
         ],
@@ -249,7 +249,7 @@
           "metricName": "CASSANDRA_READ_LATENCY_MEAN",
           "key": "",
           "metricType": "standard",
-          "scale": 1,
+          "scale": 0.001,
           "enabled": true
         }
         ],

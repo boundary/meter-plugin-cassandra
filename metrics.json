@@ -4,7 +4,7 @@
     "defaultResolutionMS": 1000,
     "description": "Compaction Pending Tasks",
     "displayName": "Cassandra - Compaction Pendings",
-    "displayNameShort": "Comp. Pendings",
+    "displayNameShort": "Compact. Pendings",
     "unit": "number"
   },
   "CASSANDRA_COMPACTION_COMPLETED_TASKS": {
@@ -12,7 +12,7 @@
     "defaultResolutionMS": 1000,
     "description": "Compaction Completed Tasks",
     "displayName": "Cassandra - Compaction Completed",
-    "displayNameShort": "Comp. Completed",
+    "displayNameShort": "Compact. Completed",
     "unit": "number"
   },
   "CASSANDRA_COMPACTION_TOTAL_COMPLETED_RATE": {
@@ -20,7 +20,7 @@
     "defaultResolutionMS": 1000,
     "description": "Compaction Completed Rate",
     "displayName": "Cassandra - Compaction Rate",
-    "displayNameShort": "Comp. Completed Rate",
+    "displayNameShort": "Compact. Completed Rate",
     "unit": "number"
   },
   "CASSANDRA_CACHE_KEYCACHE_HITRATE": {
@@ -79,7 +79,7 @@
     "displayNameShort": "RowCache Entries",
     "unit": "number"
   },
-  "CASSANDRA_CACHE_KEYCACHE_SIZE": {
+  "CASSANDRA_CACHE_ROWCACHE_SIZE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Cache RowCache Size",
@@ -92,7 +92,7 @@
     "defaultResolutionMS": 1000,
     "description": "Network Total Timeouts",
     "displayName": "Cassandra - Network Total Timeouts",
-    "displayNameShort": "Net. Timeouts",
+    "displayNameShort": "Network Timeouts",
     "unit": "number"
   },
   "CASSANDRA_WRITE_LATENCY_MEAN": {
@@ -100,7 +100,7 @@
     "defaultResolutionMS": 1000,
     "description": "Write Latency Mean",
     "displayName": "Cassandra - Write Latency Mean",
-    "displayNameShort": "WR Latency",
+    "displayNameShort": "Write Latency",
     "unit": "duration"
   },
   "CASSANDRA_WRITE_FAILURES_RATE": {
@@ -108,7 +108,7 @@
     "defaultResolutionMS": 1000,
     "description": "Write Failures Rate",
     "displayName": "Cassandra - Write Failures Rate",
-    "displayNameShort": "WR Failures",
+    "displayNameShort": "Write Failures",
     "unit": "number"
   },
   "CASSANDRA_WRITE_TIMEOUTS_RATE": {
@@ -116,7 +116,7 @@
     "defaultResolutionMS": 1000,
     "description": "Write Timeouts Rate",
     "displayName": "Cassandra - Write Timeouts Rate",
-    "displayNameShort": "WR Timeouts",
+    "displayNameShort": "Write Timeouts",
     "unit": "number"
   },
   "CASSANDRA_READ_LATENCY_MEAN": {
@@ -124,7 +124,7 @@
     "defaultResolutionMS": 1000,
     "description": "Read Latency Mean",
     "displayName": "Cassandra - Read Latency Mean",
-    "displayNameShort": "R Latency",
+    "displayNameShort": "Read Latency",
     "unit": "duration"
   },
   "CASSANDRA_READ_FAILURES_RATE": {
@@ -132,7 +132,7 @@
     "defaultResolutionMS": 1000,
     "description": "Read Failures Rate",
     "displayName": "Cassandra - Read Failures Rate",
-    "displayNameShort": "R Failures",
+    "displayNameShort": "Read Failures",
     "unit": "number"
   },
   "CASSANDRA_READ_TIMEOUTS_RATE": {
@@ -140,7 +140,7 @@
     "defaultResolutionMS": 1000,
     "description": "Read Timeouts Rate",
     "displayName": "Cassandra - Read Timeouts Rate",
-    "displayNameShort": "R Timeouts",
+    "displayNameShort": "Read Timeouts",
     "unit": "number"
   },
   "CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS": {
