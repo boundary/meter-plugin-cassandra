@@ -49,6 +49,12 @@ In order for the plugin to collect statistics from Cassandra you need to ensure 
 | CASSANDRA_CACHE_ROWCACHE_ENTRIES | Number of entries on RowCache. |
 | CASSANDRA_CACHE_ROWCACHE_SIZE | Cache size in bytes for RowCache. |
 | CASSANDRA_CACHE_ROWCACHE_CAPACITY | Cache capacity in bytes for RowCache. |
+| CASSANDRA_CACHE_COUNTERCACHE_HITRATE | Cache hit rate for CounterCache. |
+| CASSANDRA_CACHE_COUNTERCACHE_REQUEST_RATE | Cache request count for CounterCache per second. | 
+| CASSANDRA_CACHE_COUNTERCACHE_ENTRIES | Number of entries on CounterCache. |
+| CASSANDRA_CACHE_COUNTERCACHE_SIZE | Cache size in bytes for CounterCache. |
+| CASSANDRA_CACHE_COUNTERCHE_CAPACITY | Cache capacity in bytes for CounterCache. |
+| CASSANDRA_NET_TOTAL_TIMEOUTS | Total number of timeouts ocurred for this node. |
 | CASSANDRA_NET_TOTAL_TIMEOUTS | Total number of timeouts ocurred for this node. |
 | CASSANDRA_WRITE_LATENCY_MEAN | Latency on write operations. |
 | CASSANDRA_WRITE_FAILURES_RATE | Number of failures per second on write operations. |

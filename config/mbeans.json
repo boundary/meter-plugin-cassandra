@@ -211,6 +211,81 @@
       "enabled": true
     },
     {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=CounterCache,name=HitRate",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CACHE_COUNTERCACHE_HITRATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=CounterCache,name=Requests",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CACHE_COUNTERCACHE_REQUESTS_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=CounterCache,name=Entries",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "CASSANDRA_CACHE_COUNTERCACHE_ENTRIES",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=CounterCache,name=Size",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "long",
+          "metricName": "CASSANDRA_CACHE_COUNTERCACHE_SIZE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=CounterCache,name=Capacity",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "long",
+          "metricName": "CASSANDRA_CACHE_COUNTERCACHE_CAPACITY",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
       "mbean": "org.apache.cassandra.metrics:type=Connection,name=TotalTimeouts",
       "attributes": [
        	{
