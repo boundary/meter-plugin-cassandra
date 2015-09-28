@@ -286,11 +286,26 @@
       "enabled": true
     },
     {
+      "mbean": "org.apache.cassandra.metrics:type=Client,name=connectedNativeClients",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "CASSANDRA_CLIENT_CONNECTED_NATIVE_CLIENTS",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
       "mbean": "org.apache.cassandra.metrics:type=Client,name=connectedThriftClients",
       "attributes": [
        	{
-          "attribute": "MeanRate",
-          "dataType": "double",
+          "attribute": "Value",
+          "dataType": "int",
           "metricName": "CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS",
           "key": "",
           "metricType": "standard",

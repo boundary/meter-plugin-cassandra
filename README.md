@@ -54,6 +54,7 @@ In order for the plugin to collect statistics from Cassandra you need to ensure 
 | CASSANDRA_READ_LATENCY_MEAN | Latency on read operations. |
 | CASSANDRA_READ_FAILURES_RATE | Number of failures per second on read operations. |
 | CASSANDRA_READ_TIMEOUTS_RATE | Number of timeouts per second on read operations. |
+| CASSANDRA_CLIENT_CONNECTED_NATIVE_CLIENTS | Number of native clients connected. |
 | CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS | Number of thrift clients connected. |
 | CASSANDRA_STORAGE_LOAD_BYTES | Total disk space in bytes used for this node. |
 | CASSANDRA_STORAGE_COMMITLOG_SIZE | Current data size of all commit log segments. |

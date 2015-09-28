@@ -148,7 +148,15 @@
     "defaultResolutionMS": 1000,
     "description": "Clients Connected Thrift",
     "displayName": "Cassandra - Clients Connected Thrift",
-    "displayNameShort": "Clients Connected",
+    "displayNameShort": "Clients Conn. Thrift",
+    "unit": "number"
+  },
+  "CASSANDRA_CLIENT_CONNECTED_NATIVE_CLIENTS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Clients Connected Native",
+    "displayName": "Cassandra - Clients Connected Native",
+    "displayNameShort": "Clients Conn. Native",
     "unit": "number"
   },
   "CASSANDRA_STORAGE_LOAD_BYTES": {
