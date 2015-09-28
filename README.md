@@ -35,28 +35,37 @@ In order for the plugin to collect statistics from Cassandra you need to ensure 
 
 |Metric Name                                   |Description                                                               |
 |:---------------------------------------------|:-------------------------------------------------------------------------|
-|  CASSANDRA_COMPACTION_PENDING_TASKS | Number of estimated compaction tasks remaining to perform |
-| CASSANDRA_COMPACTION_COMPLETED_TASKS | Number of completed compactions since the last start of this Cassandra instance | 
-| CASSANDRA_COMPACTION_TOTAL_COMPLETED_RATE |
-| CASSANDRA_COMPACTION_BYTES_COMPACTED | The progress of the current compaction. This attribute is null if no compactions are in progress. |
-| CASSANDRA_CACHE_KEYCACHE_HITRATE |
-| CASSANDRA_CACHE_KEYCACHE_REQUESTS_RATE |
-| CASSANDRA_CACHE_KEYCACHE_ENTRIES |
-| CASSANDRA_CACHE_KEYCACHE_SIZE |
-| CASSANDRA_CACHE_ROWCACHE_HITRATE |
-| CASSANDRA_CACHE_ROWCACHE_REQUEST_RATE |
-| CASSANDRA_CACHE_ROWCACHE_ENTRIES |
-| CASSANDRA_CACHE_ROWCACHE_SIZE |
-| CASSANDRA_NET_TOTAL_TIMEOUTS |
-| CASSANDRA_WRITE_LATENCY_MEAN |
-| CASSANDRA_WRITE_FAILURES_RATE
-| CASSANDRA_WRITE_TIMEOUTS_RATE
-| CASSANDRA_READ_LATENCY_MEAN
-| CASSANDRA_READ_FAILURES_RATE
-| CASSANDRA_READ_TIMEOUTS_RATE
-| CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS |
-| CASSANDRA_STORAGE_LOAD_BYTES |
-| CASSANDRA_STORAGE_COMMITLOG_SIZE |
+|  CASSANDRA_COMPACTION_PENDING_TASKS | Estimated number of pending compaction tasks. |
+| CASSANDRA_COMPACTION_COMPLETED_TASKS | Estimated number of completed compaction tasks. | 
+| CASSANDRA_COMPACTION_TOTAL_COMPLETED_RATE | Estimated number of completed compaction tasks per second. |
+| CASSANDRA_COMPACTION_BYTES_COMPACTED | Number of bytes compacted since node started. |
+| CASSANDRA_CACHE_KEYCACHE_HITRATE | Cache hit rate for KeyCache. |
+| CASSANDRA_CACHE_KEYCACHE_REQUESTS_RATE | Cache request count for KeyCache per second. |
+| CASSANDRA_CACHE_KEYCACHE_ENTRIES | Number of entries on KeyCache. |
+| CASSANDRA_CACHE_KEYCACHE_SIZE | Cache size in bytes for KeyCache. |
+| CASSANDRA_CACHE_KEYCACHE_CAPACITY | Cache capacity in bytes for KeyCache. |
+| CASSANDRA_CACHE_ROWCACHE_HITRATE | Cache hit rate for RowCache. |
+| CASSANDRA_CACHE_ROWCACHE_REQUEST_RATE | Cache request count for RowCache per second. | 
+| CASSANDRA_CACHE_ROWCACHE_ENTRIES | Number of entries on RowCache. |
+| CASSANDRA_CACHE_ROWCACHE_SIZE | Cache size in bytes for RowCache. |
+| CASSANDRA_CACHE_ROWCACHE_CAPACITY | Cache capacity in bytes for RowCache. |
+| CASSANDRA_CACHE_COUNTERCACHE_HITRATE | Cache hit rate for CounterCache. |
+| CASSANDRA_CACHE_COUNTERCACHE_REQUEST_RATE | Cache request count for CounterCache per second. | 
+| CASSANDRA_CACHE_COUNTERCACHE_ENTRIES | Number of entries on CounterCache. |
+| CASSANDRA_CACHE_COUNTERCACHE_SIZE | Cache size in bytes for CounterCache. |
+| CASSANDRA_CACHE_COUNTERCHE_CAPACITY | Cache capacity in bytes for CounterCache. |
+| CASSANDRA_NET_TOTAL_TIMEOUTS | Total number of timeouts ocurred for this node. |
+| CASSANDRA_NET_TOTAL_TIMEOUTS | Total number of timeouts ocurred for this node. |
+| CASSANDRA_WRITE_LATENCY_MEAN | Latency on write operations. |
+| CASSANDRA_WRITE_FAILURES_RATE | Number of failures per second on write operations. |
+| CASSANDRA_WRITE_TIMEOUTS_RATE | Number of timeouts per second on write operations. | 
+| CASSANDRA_READ_LATENCY_MEAN | Latency on read operations. |
+| CASSANDRA_READ_FAILURES_RATE | Number of failures per second on read operations. |
+| CASSANDRA_READ_TIMEOUTS_RATE | Number of timeouts per second on read operations. |
+| CASSANDRA_CLIENT_CONNECTED_NATIVE_CLIENTS | Number of native clients connected. |
+| CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS | Number of thrift clients connected. |
+| CASSANDRA_STORAGE_LOAD_BYTES | Total disk space in bytes used for this node. |
+| CASSANDRA_STORAGE_COMMITLOG_SIZE | Current data size of all commit log segments. |
 
 ### Dashboards
 

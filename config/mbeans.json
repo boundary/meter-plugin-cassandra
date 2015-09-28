@@ -121,6 +121,21 @@
       "enabled": true
     },
     {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=KeyCache,name=Capacity",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "long",
+          "metricName": "CASSANDRA_CACHE_KEYCACHE_CAPACITY",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
       "mbean": "org.apache.cassandra.metrics:type=Cache,scope=RowCache,name=HitRate",
       "attributes": [
        	{
@@ -172,6 +187,96 @@
           "attribute": "Value",
           "dataType": "long",
           "metricName": "CASSANDRA_CACHE_ROWCACHE_SIZE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=RowCache,name=Capacity",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "long",
+          "metricName": "CASSANDRA_CACHE_ROWCACHE_CAPACITY",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=CounterCache,name=HitRate",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CACHE_COUNTERCACHE_HITRATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=CounterCache,name=Requests",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CACHE_COUNTERCACHE_REQUESTS_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=CounterCache,name=Entries",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "CASSANDRA_CACHE_COUNTERCACHE_ENTRIES",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=CounterCache,name=Size",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "long",
+          "metricName": "CASSANDRA_CACHE_COUNTERCACHE_SIZE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=CounterCache,name=Capacity",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "long",
+          "metricName": "CASSANDRA_CACHE_COUNTERCACHE_CAPACITY",
           "key": "",
           "metricType": "standard",
           "scale": 1,
@@ -286,11 +391,26 @@
       "enabled": true
     },
     {
+      "mbean": "org.apache.cassandra.metrics:type=Client,name=connectedNativeClients",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "CASSANDRA_CLIENT_CONNECTED_NATIVE_CLIENTS",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
       "mbean": "org.apache.cassandra.metrics:type=Client,name=connectedThriftClients",
       "attributes": [
        	{
-          "attribute": "MeanRate",
-          "dataType": "double",
+          "attribute": "Value",
+          "dataType": "int",
           "metricName": "CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS",
           "key": "",
           "metricType": "standard",
