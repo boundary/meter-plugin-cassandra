@@ -51,8 +51,16 @@
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Cache KeyCache Size",
-    "displayName": "Cassandra - KeyCache Size",
+    "displayName": "Cassandra - KeyCache Size in bytes",
     "displayNameShort": "KeyCache Size",
+    "unit": "bytecount"
+  },
+  "CASSANDRA_CACHE_KEYCACHE_CAPACITY": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cache KeyCache Capacity in bytes",
+    "displayName": "Cassandra - KeyCache Capacity",
+    "displayNameShort": "KeyCache Capacity",
     "unit": "bytecount"
   },
   "CASSANDRA_CACHE_ROWCACHE_HITRATE": {
@@ -85,6 +93,14 @@
     "description": "Cache RowCache Size",
     "displayName": "Cassandra - RowCache Size",
     "displayNameShort": "RowCache Size",
+    "unit": "bytecount"
+  },
+  "CASSANDRA_CACHE_ROWCACHE_CAPACITY": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cache RowCache Capacity",
+    "displayName": "Cassandra - RowCache Capacity",
+    "displayNameShort": "RowCache Capacity",
     "unit": "bytecount"
   },
   "CASSANDRA_NET_TOTAL_TIMEOUTS": {

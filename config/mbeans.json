@@ -121,6 +121,21 @@
       "enabled": true
     },
     {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=KeyCache,name=Capacity",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "long",
+          "metricName": "CASSANDRA_CACHE_KEYCACHE_CAPACITY",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
       "mbean": "org.apache.cassandra.metrics:type=Cache,scope=RowCache,name=HitRate",
       "attributes": [
        	{
@@ -172,6 +187,21 @@
           "attribute": "Value",
           "dataType": "long",
           "metricName": "CASSANDRA_CACHE_ROWCACHE_SIZE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=RowCache,name=Capacity",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "long",
+          "metricName": "CASSANDRA_CACHE_ROWCACHE_CAPACITY",
           "key": "",
           "metricType": "standard",
           "scale": 1,
