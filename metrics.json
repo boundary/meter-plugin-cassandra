@@ -50,8 +50,8 @@
   "CASSANDRA_CACHE_KEYCACHE_SIZE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cassandra - Cache KeyCache Size",
-    "displayName": "KeyCache Size in bytes",
+    "description": "Cassandra - Cache KeyCache Size in bytes",
+    "displayName": "KeyCache Size",
     "displayNameShort": "KeyCache Size",
     "unit": "bytecount"
   },
@@ -90,7 +90,7 @@
   "CASSANDRA_CACHE_ROWCACHE_SIZE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cassandra - Cache RowCache Size",
+    "description": "Cassandra - Cache RowCache Size in bytes",
     "displayName": "RowCache Size",
     "displayNameShort": "RowCache Size",
     "unit": "bytecount"
@@ -98,7 +98,7 @@
   "CASSANDRA_CACHE_ROWCACHE_CAPACITY": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cassandra - Cache RowCache Capacity",
+    "description": "Cassandra - Cache RowCache Capacity in bytes",
     "displayName": "RowCache Capacity",
     "displayNameShort": "RowCache Capacity",
     "unit": "bytecount"
