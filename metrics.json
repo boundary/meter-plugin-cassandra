@@ -2,232 +2,232 @@
   "CASSANDRA_COMPACTION_PENDING_TASKS": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Compaction Pending Tasks",
-    "displayName": "Cassandra - Compaction Pendings",
+    "description": "Cassandra - Compaction Pending Tasks",
+    "displayName": "Compaction Pendings",
     "displayNameShort": "Compact. Pendings",
     "unit": "number"
   },
   "CASSANDRA_COMPACTION_COMPLETED_TASKS": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Compaction Completed Tasks",
-    "displayName": "Cassandra - Compaction Completed",
+    "description": "Cassandra - Compaction Completed Tasks",
+    "displayName": "Compaction Completed",
     "displayNameShort": "Compact. Completed",
     "unit": "number"
   },
   "CASSANDRA_COMPACTION_TOTAL_COMPLETED_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Compaction Completed Rate",
-    "displayName": "Cassandra - Compaction Rate",
+    "description": "Cassandra - Compaction Completed Rate",
+    "displayName": "Compaction Rate",
     "displayNameShort": "Compact. Completed Rate",
     "unit": "number"
   },
   "CASSANDRA_CACHE_KEYCACHE_HITRATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cache KeyCache Hit Rate",
-    "displayName": "Cassandra - KeyCache Hit Rate",
+    "description": "Cassandra - Cache KeyCache Hit Rate",
+    "displayName": "KeyCache Hit Rate",
     "displayNameShort": "KeyCache Hit Rate",
     "unit": "number"
   },
   "CASSANDRA_CACHE_KEYCACHE_REQUESTS_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cache KeyCache Requests Rate",
-    "displayName": "Cassandra - KeyCache Request Rate",
+    "description": "Cassandra - Cache KeyCache Requests Rate",
+    "displayName": "KeyCache Request Rate",
     "displayNameShort": "KeyCache Req. Rate",
     "unit": "number"
   },
   "CASSANDRA_CACHE_KEYCACHE_ENTRIES": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cache KeyCache Entries",
-    "displayName": "Cassandra - KeyCache Entries",
+    "description": "Cassandra - Cache KeyCache Entries",
+    "displayName": "KeyCache Entries",
     "displayNameShort": "KeyCache Entries",
     "unit": "number"
   },
   "CASSANDRA_CACHE_KEYCACHE_SIZE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cache KeyCache Size",
-    "displayName": "Cassandra - KeyCache Size in bytes",
+    "description": "Cassandra - Cache KeyCache Size",
+    "displayName": "KeyCache Size in bytes",
     "displayNameShort": "KeyCache Size",
     "unit": "bytecount"
   },
   "CASSANDRA_CACHE_KEYCACHE_CAPACITY": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cache KeyCache Capacity in bytes",
-    "displayName": "Cassandra - KeyCache Capacity",
+    "description": "Cassandra - Cache KeyCache Capacity in bytes",
+    "displayName": "KeyCache Capacity",
     "displayNameShort": "KeyCache Capacity",
     "unit": "bytecount"
   },
   "CASSANDRA_CACHE_ROWCACHE_HITRATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cache RowCache Hit Rate",
-    "displayName": "Cassandra - RowCache Hit Rate",
+    "description": "Cassandra - Cache RowCache Hit Rate",
+    "displayName": "RowCache Hit Rate",
     "displayNameShort": "RowCache Hit Rate",
     "unit": "number"
   },
   "CASSANDRA_CACHE_ROWCACHE_REQUESTS_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cache RowCache Requests Rate",
-    "displayName": "Cassandra - RowCache Request Rate",
+    "description": "Cassandra - Cache RowCache Requests Rate",
+    "displayName": "RowCache Request Rate",
     "displayNameShort": "RowCache Req. Rate",
     "unit": "number"
   },
   "CASSANDRA_CACHE_ROWCACHE_ENTRIES": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cache RowCache Entries",
-    "displayName": "Cassandra - RowCache Entries",
+    "description": "Cassandra - Cache RowCache Entries",
+    "displayName": "RowCache Entries",
     "displayNameShort": "RowCache Entries",
     "unit": "number"
   },
   "CASSANDRA_CACHE_ROWCACHE_SIZE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cache RowCache Size",
-    "displayName": "Cassandra - RowCache Size",
+    "description": "Cassandra - Cache RowCache Size",
+    "displayName": "RowCache Size",
     "displayNameShort": "RowCache Size",
     "unit": "bytecount"
   },
   "CASSANDRA_CACHE_ROWCACHE_CAPACITY": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cache RowCache Capacity",
-    "displayName": "Cassandra - RowCache Capacity",
+    "description": "Cassandra - Cache RowCache Capacity",
+    "displayName": "RowCache Capacity",
     "displayNameShort": "RowCache Capacity",
     "unit": "bytecount"
   },
   "CASSANDRA_CACHE_COUNTERCACHE_HITRATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cache CounterCache Hit Rate",
-    "displayName": "Cassandra - CounterCache Hit Rate",
+    "description": "Cassandra - Cache CounterCache Hit Rate",
+    "displayName": "CounterCache Hit Rate",
     "displayNameShort": "CounterCache Hit Rate",
     "unit": "number"
   },
   "CASSANDRA_CACHE_COUNTERCACHE_REQUESTS_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cache CounterCache Requests Rate",
-    "displayName": "Cassandra - CounterCache Request Rate",
+    "description": "Cassandra - Cache CounterCache Requests Rate",
+    "displayName": "CounterCache Request Rate",
     "displayNameShort": "CounterCache Req. Rate",
     "unit": "number"
   },
   "CASSANDRA_CACHE_COUNTERCACHE_ENTRIES": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cache CounterCache Entries",
-    "displayName": "Cassandra - CounterCache Entries",
+    "description": "Cassandra - Cache CounterCache Entries",
+    "displayName": "CounterCache Entries",
     "displayNameShort": "CounterCache Entries",
     "unit": "number"
   },
   "CASSANDRA_CACHE_COUNTERCACHE_SIZE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cache CounterCache Size",
-    "displayName": "Cassandra - CounterCache Size",
+    "description": "Cassandra - Cache CounterCache Size",
+    "displayName": "CounterCache Size",
     "displayNameShort": "CounterCache Size",
     "unit": "bytecount"
   },
   "CASSANDRA_CACHE_COUNTERCACHE_CAPACITY": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cache CounterCache Capacity",
-    "displayName": "Cassandra - CounterCache Capacity",
+    "description": "Cassandra - Cache CounterCache Capacity",
+    "displayName": "CounterCache Capacity",
     "displayNameShort": "CounterCache Capacity",
     "unit": "bytecount"
   },
   "CASSANDRA_NET_TOTAL_TIMEOUTS": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Network Total Timeouts",
-    "displayName": "Cassandra - Network Total Timeouts",
+    "description": "Cassandra - Network Total Timeouts",
+    "displayName": "Network Total Timeouts",
     "displayNameShort": "Network Timeouts",
     "unit": "number"
   },
   "CASSANDRA_WRITE_LATENCY_MEAN": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Write Latency Mean",
-    "displayName": "Cassandra - Write Latency Mean",
+    "description": "Cassandra - Write Latency Mean",
+    "displayName": "Write Latency Mean",
     "displayNameShort": "Write Latency",
     "unit": "duration"
   },
   "CASSANDRA_WRITE_FAILURES_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Write Failures Rate",
-    "displayName": "Cassandra - Write Failures Rate",
+    "description": "Cassandra - Write Failures Rate",
+    "displayName": "Write Failures Rate",
     "displayNameShort": "Write Failures",
     "unit": "number"
   },
   "CASSANDRA_WRITE_TIMEOUTS_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Write Timeouts Rate",
-    "displayName": "Cassandra - Write Timeouts Rate",
+    "description": "Cassandra - Write Timeouts Rate",
+    "displayName": "Write Timeouts Rate",
     "displayNameShort": "Write Timeouts",
     "unit": "number"
   },
   "CASSANDRA_READ_LATENCY_MEAN": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Read Latency Mean",
-    "displayName": "Cassandra - Read Latency Mean",
+    "description": "Cassandra - Read Latency Mean",
+    "displayName": "Read Latency Mean",
     "displayNameShort": "Read Latency",
     "unit": "duration"
   },
   "CASSANDRA_READ_FAILURES_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Read Failures Rate",
-    "displayName": "Cassandra - Read Failures Rate",
+    "description": "Cassandra - Read Failures Rate",
+    "displayName": "Read Failures Rate",
     "displayNameShort": "Read Failures",
     "unit": "number"
   },
   "CASSANDRA_READ_TIMEOUTS_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Read Timeouts Rate",
-    "displayName": "Cassandra - Read Timeouts Rate",
+    "description": "Cassandra - Read Timeouts Rate",
+    "displayName": "Read Timeouts Rate",
     "displayNameShort": "Read Timeouts",
     "unit": "number"
   },
   "CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Clients Connected Thrift",
-    "displayName": "Cassandra - Clients Connected Thrift",
+    "description": "Cassandra - Clients Connected Thrift",
+    "displayName": "Clients Connected Thrift",
     "displayNameShort": "Clients Conn. Thrift",
     "unit": "number"
   },
   "CASSANDRA_CLIENT_CONNECTED_NATIVE_CLIENTS": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Clients Connected Native",
-    "displayName": "Cassandra - Clients Connected Native",
+    "description": "Cassandra - Clients Connected Native",
+    "displayName": "Clients Connected Native",
     "displayNameShort": "Clients Conn. Native",
     "unit": "number"
   },
   "CASSANDRA_STORAGE_LOAD_BYTES": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Storage Load Bytes",
-    "displayName": "Cassandra - Storage Load Bytes",
+    "description": "Cassandra - Storage Load Bytes",
+    "displayName": "Storage Load Bytes",
     "displayNameShort": "Storage Load",
     "unit": "bytecount"
   },
   "CASSANDRA_STORAGE_COMMITLOG_SIZE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Storage Commitlog Size",
-    "displayName": "Cassandra - Storage Commitlog Size",
+    "description": "Cassandra - Storage Commitlog Size",
+    "displayName": "Storage Commitlog Size",
     "displayNameShort": "Storage Commitlog",
     "unit": "bytecount"
   }
