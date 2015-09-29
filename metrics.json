@@ -143,13 +143,13 @@
     "displayNameShort": "CounterCache Capacity",
     "unit": "bytecount"
   },
-  "CASSANDRA_NET_TOTAL_TIMEOUTS": {
+  "CASSANDRA_HEAPMEMORY_USED": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cassandra - Network Total Timeouts",
-    "displayName": "Network Total Timeouts",
-    "displayNameShort": "Network Timeouts",
-    "unit": "number"
+    "description": "Cassandra - Heap Memory Used",
+    "displayName": "Heap Memory Used",
+    "displayNameShort": "Heap Memory Used",
+    "unit": "bytecount"
   },
   "CASSANDRA_WRITE_LATENCY_MEAN": {
     "defaultAggregate": "max",
