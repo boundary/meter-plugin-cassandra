@@ -286,13 +286,13 @@
       "enabled": true
     },
     {
-      "mbean": "org.apache.cassandra.metrics:type=Connection,name=TotalTimeouts",
+      "mbean": "java.lang:type=Memory",
       "attributes": [
        	{
-          "attribute": "Count",
-          "dataType": "long",
-          "metricName": "CASSANDRA_NET_TOTAL_TIMEOUTS",
-          "key": "",
+          "attribute": "HeapMemoryUsage",
+          "dataType": "javax.management.openmbean.CompositeData",
+          "metricName": "CASSANDRA_HEAPMEMORY_USED",
+          "key": "used",
           "metricType": "standard",
           "scale": 1,
           "enabled": true
