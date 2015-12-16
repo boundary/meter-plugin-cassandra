@@ -45,12 +45,12 @@ In order for the plugin to collect statistics from Cassandra you need to ensure 
 | CASSANDRA_CACHE_KEYCACHE_SIZE | Cache size in bytes for KeyCache. |
 | CASSANDRA_CACHE_KEYCACHE_CAPACITY | Cache capacity in bytes for KeyCache. |
 | CASSANDRA_CACHE_ROWCACHE_HITRATE | Cache hit rate for RowCache. |
-| CASSANDRA_CACHE_ROWCACHE_REQUEST_RATE | Cache request count for RowCache per second. | 
+| CASSANDRA_CACHE_ROWCACHE_REQUESTS_RATE | Cache request count for RowCache per second. | 
 | CASSANDRA_CACHE_ROWCACHE_ENTRIES | Number of entries on RowCache. |
 | CASSANDRA_CACHE_ROWCACHE_SIZE | Cache size in bytes for RowCache. |
 | CASSANDRA_CACHE_ROWCACHE_CAPACITY | Cache capacity in bytes for RowCache. |
 | CASSANDRA_CACHE_COUNTERCACHE_HITRATE | Cache hit rate for CounterCache. |
-| CASSANDRA_CACHE_COUNTERCACHE_REQUEST_RATE | Cache request count for CounterCache per second. | 
+| CASSANDRA_CACHE_COUNTERCACHE_REQUESTS_RATE | Cache request count for CounterCache per second. | 
 | CASSANDRA_CACHE_COUNTERCACHE_ENTRIES | Number of entries on CounterCache. |
 | CASSANDRA_CACHE_COUNTERCACHE_SIZE | Cache size in bytes for CounterCache. |
 | CASSANDRA_CACHE_COUNTERCHE_CAPACITY | Cache capacity in bytes for CounterCache. |
