@@ -449,6 +449,66 @@
         }
         ],
       "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=DroppedMetrics,scope=MUTATION,name=Dropped",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_DROPPED_MUTATION_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=DroppedMetrics,scope=READ,name=Dropped",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_DROPPED_READ_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=DroppedMetrics,scope=COUNTER_MUTATION,name=Dropped",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_COUNTER_MUTATION_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=DroppedMetrics,scope=HINT,name=Dropped",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_DROPPED_HINT_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
     }
 
     ]
