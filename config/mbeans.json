@@ -316,6 +316,36 @@
       "enabled": true
     },
     {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Write,name=Latency",
+      "attributes": [
+       	{
+          "attribute": "95percentile",
+          "dataType": "double",
+          "metricName": "CASSANDRA_WRITE_LATENCY_95P",
+          "key": "",
+          "metricType": "standard",
+          "scale": 0.001,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Write,name=Latency",
+      "attributes": [
+       	{
+          "attribute": "1MinuteRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_WRITE_1MIN_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Write,name=Failures",
       "attributes": [
        	{
@@ -361,6 +391,36 @@
       "enabled": true
     },
     {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Latency",
+      "attributes": [
+       	{
+          "attribute": "95percentile",
+          "dataType": "double",
+          "metricName": "CASSANDRA_READ_LATENCY_95P",
+          "key": "",
+          "metricType": "standard",
+          "scale": 0.001,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Latency",
+      "attributes": [
+       	{
+          "attribute": "1MinuteRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_READ_1MIN_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Failures",
       "attributes": [
        	{
@@ -382,6 +442,231 @@
           "attribute": "MeanRate",
           "dataType": "double",
           "metricName": "CASSANDRA_READ_TIMEOUTS_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=RangeSlice,name=Latency",
+      "attributes": [
+       	{
+          "attribute": "Mean",
+          "dataType": "double",
+          "metricName": "CASSANDRA_RANGE_SLICE_LATENCY_MEAN",
+          "key": "",
+          "metricType": "standard",
+          "scale": 0.001,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=RangeSlice,name=Latency",
+      "attributes": [
+       	{
+          "attribute": "95percentile",
+          "dataType": "double",
+          "metricName": "CASSANDRA_RANGE_SLICE_LATENCY_95P",
+          "key": "",
+          "metricType": "standard",
+          "scale": 0.001,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=RangeSlice,name=Latency",
+      "attributes": [
+       	{
+          "attribute": "1MinuteRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_RANGE_SLICE_1MIN_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=RangeSlice,name=Failures",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_RANGE_SLICE_FAILURES_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=RangeSlice,name=Timeouts",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_RANGE_SLICE_TIMEOUTS_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASRead,name=Latency",
+      "attributes": [
+       	{
+          "attribute": "Mean",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CAS_READ_LATENCY_MEAN",
+          "key": "",
+          "metricType": "standard",
+          "scale": 0.001,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASRead,name=Latency",
+      "attributes": [
+       	{
+          "attribute": "95percentile",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CAS_READ_LATENCY_95P",
+          "key": "",
+          "metricType": "standard",
+          "scale": 0.001,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASRead,name=Latency",
+      "attributes": [
+       	{
+          "attribute": "1MinuteRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CAS_READ_1MIN_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASRead,name=Failures",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CAS_READ_FAILURES_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASRead,name=Timeouts",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CAS_READ_TIMEOUTS_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASWrite,name=Latency",
+      "attributes": [
+       	{
+          "attribute": "Mean",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CAS_WRITE_LATENCY_MEAN",
+          "key": "",
+          "metricType": "standard",
+          "scale": 0.001,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASWrite,name=Latency",
+      "attributes": [
+       	{
+          "attribute": "95percentile",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CAS_WRITE_LATENCY_95P",
+          "key": "",
+          "metricType": "standard",
+          "scale": 0.001,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASWrite,name=Latency",
+      "attributes": [
+       	{
+          "attribute": "1MinuteRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CAS_WRITE_1MIN_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASWrite,name=Failures",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CAS_WRITE_FAILURES_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASWrite,name=Timeouts",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "CASSANDRA_CAS_WRITE_TIMEOUTS_RATE",
           "key": "",
           "metricType": "standard",
           "scale": 1,
