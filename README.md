@@ -1,6 +1,6 @@
-# TrueSight Pulse Cassandra Plugin 
+# TrueSight Pulse Plugin for Apache Cassandra
 
-Collects metrics from a Cassandra instances
+Collects metrics from an instance of Apache Cassandra
 
 ### Prerequisites
 
@@ -73,4 +73,4 @@ In order for the plugin to collect statistics from Cassandra you need to ensure 
 
 ### References
 
-http://docs.datastax.com/en/cassandra/2.0/cassandra/operations/ops_monitoring_c.html
+http://cassandra.apache.org/doc/latest/operating/metrics.html
