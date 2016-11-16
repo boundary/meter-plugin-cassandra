@@ -61,7 +61,7 @@
       "enabled": true
     },
     {
-      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=KeyCache,name=HitRate",
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=KeyCache,name=OneMinuteHitRate",
       "attributes": [
        	{
           "attribute": "Value",
@@ -136,7 +136,7 @@
       "enabled": true
     },
     {
-      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=RowCache,name=HitRate",
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=RowCache,name=OneMinuteHitRate",
       "attributes": [
        	{
           "attribute": "Value",
@@ -211,7 +211,7 @@
       "enabled": true
     },
     {
-      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=CounterCache,name=HitRate",
+      "mbean": "org.apache.cassandra.metrics:type=Cache,scope=CounterCache,name=OneMinuteHitRate",
       "attributes": [
        	{
           "attribute": "Value",
