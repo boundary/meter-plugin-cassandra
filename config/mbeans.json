@@ -736,7 +736,7 @@
       "enabled": true
     },
     {
-      "mbean": "org.apache.cassandra.metrics:type=DroppedMetrics,scope=MUTATION,name=Dropped",
+      "mbean": "org.apache.cassandra.metrics:type=DroppedMessage,scope=MUTATION,name=Dropped",
       "attributes": [
        	{
           "attribute": "MeanRate",
@@ -751,7 +751,7 @@
       "enabled": true
     },
     {
-      "mbean": "org.apache.cassandra.metrics:type=DroppedMetrics,scope=READ,name=Dropped",
+      "mbean": "org.apache.cassandra.metrics:type=DroppedMessage,scope=READ,name=Dropped",
       "attributes": [
        	{
           "attribute": "MeanRate",
@@ -766,12 +766,12 @@
       "enabled": true
     },
     {
-      "mbean": "org.apache.cassandra.metrics:type=DroppedMetrics,scope=COUNTER_MUTATION,name=Dropped",
+      "mbean": "org.apache.cassandra.metrics:type=DroppedMessage,scope=COUNTER_MUTATION,name=Dropped",
       "attributes": [
        	{
           "attribute": "MeanRate",
           "dataType": "double",
-          "metricName": "CASSANDRA_COUNTER_MUTATION_RATE",
+          "metricName": "CASSANDRA_DROPPED_COUNTER_MUTATION_RATE",
           "key": "",
           "metricType": "standard",
           "scale": 1,
@@ -781,7 +781,7 @@
       "enabled": true
     },
     {
-      "mbean": "org.apache.cassandra.metrics:type=DroppedMetrics,scope=HINT,name=Dropped",
+      "mbean": "org.apache.cassandra.metrics:type=DroppedMessage,scope=HINT,name=Dropped",
       "attributes": [
        	{
           "attribute": "MeanRate",
@@ -796,7 +796,7 @@
       "enabled": true
     },
     {
-      "mbean": "org.apache.cassandra.metrics:type=ThreadPools,scope=MutationStage,name=PendingTasks",
+      "mbean": "org.apache.cassandra.metrics:type=ThreadPools,path=request,scope=MutationStage,name=PendingTasks",
       "attributes": [
        	{
           "attribute": "Value",
@@ -811,7 +811,7 @@
       "enabled": true
     },
     {
-      "mbean": "org.apache.cassandra.metrics:type=ThreadPools,scope=CounterMutationStage,name=PendingTasks",
+      "mbean": "org.apache.cassandra.metrics:type=ThreadPools,path=request,scope=CounterMutationStage,name=PendingTasks",
       "attributes": [
        	{
           "attribute": "Value",
@@ -826,7 +826,7 @@
       "enabled": true
     },
     {
-      "mbean": "org.apache.cassandra.metrics:type=ThreadPools,scope=ReadStage,name=PendingTasks",
+      "mbean": "org.apache.cassandra.metrics:type=ThreadPools,path=request,scope=ReadStage,name=PendingTasks",
       "attributes": [
        	{
           "attribute": "Value",

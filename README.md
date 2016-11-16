@@ -86,7 +86,7 @@ In order for the plugin to collect statistics from Cassandra you need to ensure 
 | CASSANDRA_CAS_WRITE_TIMEOUTS_RATE | CAS write timeouts rate. |
 | CASSANDRA_DROPPED_MUTATION_RATE | Dropped mutation rate. |
 | CASSANDRA_DROPPED_READ_RATE | Dropped read rate. |
-| CASSANDRA_COUNTER_MUTATION_RATE | Counter mutation rate. |
+| CASSANDRA_DROPPED_COUNTER_MUTATION_RATE | Dropped counter mutation rate. |
 | CASSANDRA_DROPPED_HINT_RATE | Dropped hint rate. |
 | CASSANDRA_PENDING_MUTATIONS | Pending mutations. |
 | CASSANDRA_PENDING_COUNTER_MUTATIONS | Pending counter mutations. |
