@@ -400,12 +400,12 @@
     "displayNameShort": "Dropped reads",
     "unit": "number"
   },
-  "CASSANDRA_COUNTER_MUTATION_RATE": {
+  "CASSANDRA_DROPPED_COUNTER_MUTATION_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
-    "description": "Cassandra - Counter mutation rate",
-    "displayName": "Counter mutation rate",
-    "displayNameShort": "Counter mutations",
+    "description": "Cassandra - Dropped counter mutation rate",
+    "displayName": "Dropped counter mutation rate",
+    "displayNameShort": "Dropped counter mutations",
     "unit": "number"
   },
   "CASSANDRA_DROPPED_HINT_RATE": {
