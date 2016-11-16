@@ -800,7 +800,7 @@
       "attributes": [
        	{
           "attribute": "Value",
-          "dataType": "int",
+          "dataType": "long",
           "metricName": "CASSANDRA_PENDING_MUTATIONS",
           "key": "",
           "metricType": "standard",
@@ -815,7 +815,7 @@
       "attributes": [
        	{
           "attribute": "Value",
-          "dataType": "int",
+          "dataType": "long",
           "metricName": "CASSANDRA_PENDING_COUNTER_MUTATIONS",
           "key": "",
           "metricType": "standard",
@@ -830,7 +830,7 @@
       "attributes": [
        	{
           "attribute": "Value",
-          "dataType": "int",
+          "dataType": "long",
           "metricName": "CASSANDRA_PENDING_READS",
           "key": "",
           "metricType": "standard",
