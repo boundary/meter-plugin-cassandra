@@ -65,6 +65,31 @@ In order for the plugin to collect statistics from Cassandra you need to ensure 
 | CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS | Number of thrift clients connected. |
 | CASSANDRA_STORAGE_LOAD_BYTES | Total disk space in bytes used for this node. |
 | CASSANDRA_STORAGE_COMMITLOG_SIZE | Current data size of all commit log segments. |
+| CASSANDRA_WRITE_LATENCY_95P | Write latency 95th percentile. |
+| CASSANDRA_WRITE_1MIN_RATE | Write 1m rate. |
+| CASSANDRA_READ_LATENCY_95P | Read latency 95th percentile. |
+| CASSANDRA_READ_1MIN_RATE | Read 1m rate. |
+| CASSANDRA_RANGE_SLICE_LATENCY_MEAN | Range slice latency mean. |
+| CASSANDRA_RANGE_SLICE_LATENCY_95P | Range slice latency 95th percentile. |
+| CASSANDRA_RANGE_SLICE_1MIN_RATE | Range slice 1m rate. |
+| CASSANDRA_RANGE_SLICE_FAILURES_RATE | Range slice failure rate. |
+| CASSANDRA_RANGE_SLICE_TIMEOUTS_RATE | Range slice timeout rate. |
+| CASSANDRA_CAS_READ_LATENCY_MEAN | CAS read latency mean. |
+| CASSANDRA_CAS_READ_LATENCY_95P | CAS read latency 95th percentile. |
+| CASSANDRA_CAS_READ_1MIN_RATE | CAS read 1m rate. |
+| CASSANDRA_CAS_READ_FAILURES_RATE | CAS read failures rate. |
+| CASSANDRA_CAS_READ_TIMEOUTS_RATE | CAS read timeouts rate. |
+| CASSANDRA_CAS_WRITE_LATENCY_MEAN | CAS write latency mean. | 
+| CASSANDRA_CAS_WRITE_LATENCY_95P | CAS write latency 95th percentile. |
+| CASSANDRA_CAS_WRITE_FAILURES_RATE | CAS write failures rate. |
+| CASSANDRA_CAS_WRITE_TIMEOUTS_RATE | CAS write timeouts rate. |
+| CASSANDRA_DROPPED_MUTATION_RATE | Dropped mutation rate. |
+| CASSANDRA_DROPPED_READ_RATE | Dropped read rate. |
+| CASSANDRA_COUNTER_MUTATION_RATE | Counter mutation rate. |
+| CASSANDRA_DROPPED_HINT_RATE | Dropped hint rate. |
+| CASSANDRA_PENDING_MUTATIONS | Pending mutations. |
+| CASSANDRA_PENDING_COUNTER_MUTATIONS | Pending counter mutations. |
+| CASSANDRA_PENDING_READS | Pending reads. |
 
 ### Dashboards
 
