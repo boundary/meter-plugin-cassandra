@@ -794,6 +794,51 @@
         }
         ],
       "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ThreadPools,scope=MutationStage,name=PendingTasks",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "CASSANDRA_PENDING_MUTATIONS",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ThreadPools,scope=CounterMutationStage,name=PendingTasks",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "CASSANDRA_PENDING_COUNTER_MUTATIONS",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "org.apache.cassandra.metrics:type=ThreadPools,scope=ReadStage,name=PendingTasks",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "CASSANDRA_PENDING_READS",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
     }
 
     ]
