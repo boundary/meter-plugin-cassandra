@@ -96,6 +96,8 @@ In order for the plugin to collect statistics from Cassandra you need to ensure 
 
 - Cassandra General
 - Cassandra Caches 
+- Cassandra Request latencies by type
+- Cassandra Pending / Dropped Messages
 
 ### References
 
