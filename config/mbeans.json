@@ -319,7 +319,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Write,name=Latency",
       "attributes": [
        	{
-          "attribute": "95percentile",
+          "attribute": "95thPercentile",
           "dataType": "double",
           "metricName": "CASSANDRA_WRITE_LATENCY_95P",
           "key": "",
@@ -334,7 +334,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Write,name=Latency",
       "attributes": [
        	{
-          "attribute": "1MinuteRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_WRITE_1MIN_RATE",
           "key": "",
@@ -394,7 +394,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Latency",
       "attributes": [
        	{
-          "attribute": "95percentile",
+          "attribute": "95thPercentile",
           "dataType": "double",
           "metricName": "CASSANDRA_READ_LATENCY_95P",
           "key": "",
@@ -409,7 +409,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Latency",
       "attributes": [
        	{
-          "attribute": "1MinuteRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_READ_1MIN_RATE",
           "key": "",
@@ -469,7 +469,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=RangeSlice,name=Latency",
       "attributes": [
        	{
-          "attribute": "95percentile",
+          "attribute": "95thPercentile",
           "dataType": "double",
           "metricName": "CASSANDRA_RANGE_SLICE_LATENCY_95P",
           "key": "",
@@ -484,7 +484,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=RangeSlice,name=Latency",
       "attributes": [
        	{
-          "attribute": "1MinuteRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_RANGE_SLICE_1MIN_RATE",
           "key": "",
@@ -544,7 +544,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASRead,name=Latency",
       "attributes": [
        	{
-          "attribute": "95percentile",
+          "attribute": "95thPercentile",
           "dataType": "double",
           "metricName": "CASSANDRA_CAS_READ_LATENCY_95P",
           "key": "",
@@ -559,7 +559,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASRead,name=Latency",
       "attributes": [
        	{
-          "attribute": "1MinuteRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_CAS_READ_1MIN_RATE",
           "key": "",
@@ -619,7 +619,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASWrite,name=Latency",
       "attributes": [
        	{
-          "attribute": "95percentile",
+          "attribute": "95thPercentile",
           "dataType": "double",
           "metricName": "CASSANDRA_CAS_WRITE_LATENCY_95P",
           "key": "",
@@ -634,7 +634,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASWrite,name=Latency",
       "attributes": [
        	{
-          "attribute": "1MinuteRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_CAS_WRITE_1MIN_RATE",
           "key": "",
