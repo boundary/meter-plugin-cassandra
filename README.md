@@ -81,6 +81,7 @@ In order for the plugin to collect statistics from Cassandra you need to ensure 
 | CASSANDRA_CAS_READ_TIMEOUTS_RATE | CAS read timeouts rate. |
 | CASSANDRA_CAS_WRITE_LATENCY_MEAN | CAS write latency mean. | 
 | CASSANDRA_CAS_WRITE_LATENCY_95P | CAS write latency 95th percentile. |
+| CASSANDRA_CAS_WRITE_1MIN_RATE | CAS write 1m rate. |
 | CASSANDRA_CAS_WRITE_FAILURES_RATE | CAS write failures rate. |
 | CASSANDRA_CAS_WRITE_TIMEOUTS_RATE | CAS write timeouts rate. |
 | CASSANDRA_DROPPED_MUTATION_RATE | Dropped mutation rate. |

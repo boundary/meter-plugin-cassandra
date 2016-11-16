@@ -244,7 +244,7 @@
     "defaultResolutionMS": 1000,
     "description": "Cassandra - Write 1m rate",
     "displayName": "Write 1m rate",
-    "displayNameShort": "Writes",
+    "displayNameShort": "Write 1m",
     "unit": "number"
   },
   "CASSANDRA_READ_LATENCY_95P": {
@@ -359,6 +359,14 @@
     "displayName": "CAS write latency 95th percentile",
     "displayNameShort": "CAS write latency 95th",
     "unit": "duration"
+  },
+  "CASSANDRA_CAS_WRITE_1MIN_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - CAS write 1m rate",
+    "displayName": "CAS write 1m rate",
+    "displayNameShort": "CAS write 1m",
+    "unit": "number"
   },
   "CASSANDRA_CAS_WRITE_FAILURES_RATE": {
     "defaultAggregate": "max",
