@@ -317,7 +317,6 @@
     "description": "Cassandra - CAS read latency 95th percentile",
     "displayName": "CAS read latency 95th percentile",
     "displayNameShort": "CAS read latency 95th",
-    "displayNameShort": "CAS read latency 95th",
     "unit": "duration"
   },
   "CASSANDRA_CAS_READ_1MIN_RATE": {

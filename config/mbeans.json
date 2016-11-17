@@ -34,7 +34,7 @@
       "mbean": "org.apache.cassandra.metrics:type=Compaction,name=TotalCompactionsCompleted",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_COMPACTION_TOTAL_COMPLETED_RATE",
           "key": "",
@@ -79,7 +79,7 @@
       "mbean": "org.apache.cassandra.metrics:type=Cache,scope=KeyCache,name=Requests",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_CACHE_KEYCACHE_REQUESTS_RATE",
           "key": "",
@@ -154,7 +154,7 @@
       "mbean": "org.apache.cassandra.metrics:type=Cache,scope=RowCache,name=Requests",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_CACHE_ROWCACHE_REQUESTS_RATE",
           "key": "",
@@ -229,7 +229,7 @@
       "mbean": "org.apache.cassandra.metrics:type=Cache,scope=CounterCache,name=Requests",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_CACHE_COUNTERCACHE_REQUESTS_RATE",
           "key": "",
@@ -349,7 +349,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Write,name=Failures",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_WRITE_FAILURES_RATE",
           "key": "",
@@ -364,7 +364,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Write,name=Timeouts",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_WRITE_TIMEOUTS_RATE",
           "key": "",
@@ -424,7 +424,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Failures",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_READ_FAILURES_RATE",
           "key": "",
@@ -439,7 +439,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Timeouts",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_READ_TIMEOUTS_RATE",
           "key": "",
@@ -499,7 +499,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=RangeSlice,name=Failures",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_RANGE_SLICE_FAILURES_RATE",
           "key": "",
@@ -514,7 +514,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=RangeSlice,name=Timeouts",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_RANGE_SLICE_TIMEOUTS_RATE",
           "key": "",
@@ -574,7 +574,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASRead,name=Failures",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_CAS_READ_FAILURES_RATE",
           "key": "",
@@ -589,7 +589,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASRead,name=Timeouts",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_CAS_READ_TIMEOUTS_RATE",
           "key": "",
@@ -649,7 +649,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASWrite,name=Failures",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_CAS_WRITE_FAILURES_RATE",
           "key": "",
@@ -664,7 +664,7 @@
       "mbean": "org.apache.cassandra.metrics:type=ClientRequest,scope=CASWrite,name=Timeouts",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_CAS_WRITE_TIMEOUTS_RATE",
           "key": "",
@@ -739,7 +739,7 @@
       "mbean": "org.apache.cassandra.metrics:type=DroppedMessage,scope=MUTATION,name=Dropped",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_DROPPED_MUTATION_RATE",
           "key": "",
@@ -754,7 +754,7 @@
       "mbean": "org.apache.cassandra.metrics:type=DroppedMessage,scope=READ,name=Dropped",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_DROPPED_READ_RATE",
           "key": "",
@@ -769,7 +769,7 @@
       "mbean": "org.apache.cassandra.metrics:type=DroppedMessage,scope=COUNTER_MUTATION,name=Dropped",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_DROPPED_COUNTER_MUTATION_RATE",
           "key": "",
@@ -784,7 +784,7 @@
       "mbean": "org.apache.cassandra.metrics:type=DroppedMessage,scope=HINT,name=Dropped",
       "attributes": [
        	{
-          "attribute": "MeanRate",
+          "attribute": "OneMinuteRate",
           "dataType": "double",
           "metricName": "CASSANDRA_DROPPED_HINT_RATE",
           "key": "",
