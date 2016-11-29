@@ -6,8 +6,7 @@
 			"password" : "",
 			"host" : "localhost",
 			"port" : 7199,
-			"pollInterval" : 1000,
-			"source" : "cassandra"
+			"pollInterval" : 1000
 		}
 	],
 	"pollInterval" : 1000

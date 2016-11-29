@@ -230,6 +230,213 @@
     "displayName": "Storage Commitlog Size",
     "displayNameShort": "Storage Commitlog",
     "unit": "bytecount"
+  },
+  "CASSANDRA_WRITE_LATENCY_95P": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Write latency 95th percentile",
+    "displayName": "Write latency 95th percentile",
+    "displayNameShort": "Write latency 95th",
+    "unit": "duration"
+  },
+  "CASSANDRA_WRITE_1MIN_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Write 1m rate",
+    "displayName": "Write 1m rate",
+    "displayNameShort": "Write 1m",
+    "unit": "number"
+  },
+  "CASSANDRA_READ_LATENCY_95P": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Read latency 95th percentile",
+    "displayName": "Read latency 95th percentile",
+    "displayNameShort": "Read latency 95th",
+    "unit": "duration"
+  },
+  "CASSANDRA_READ_1MIN_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Read 1m rate",
+    "displayName": "Read 1m rate",
+    "displayNameShort": "Read 1m",
+    "unit": "number"
+  },
+  "CASSANDRA_RANGE_SLICE_LATENCY_MEAN": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Range slice latency mean",
+    "displayName": "Range slice latency mean",
+    "displayNameShort": "Slice latency",
+    "unit": "duration"
+  },
+  "CASSANDRA_RANGE_SLICE_LATENCY_95P": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Range slice latency 95th percentile.",
+    "displayName": "Range slice latency 95th percentile.",
+    "displayNameShort": "Slice latency 95th",
+    "unit": "duration"
+  },
+  "CASSANDRA_RANGE_SLICE_1MIN_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Range slice 1m rate",
+    "displayName": "Range slice 1m rate",
+    "displayNameShort": "Slice latency 1m",
+    "unit": "number"
+  },
+  "CASSANDRA_RANGE_SLICE_FAILURES_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Range slice failure rate",
+    "displayName": "Range slice failure rate",
+    "displayNameShort": "Slice failures",
+    "unit": "number"
+  },
+  "CASSANDRA_RANGE_SLICE_TIMEOUTS_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Range slice timeout rate",
+    "displayName": "Range slice timeout rate",
+    "displayNameShort": "Slice timeouts",
+    "unit": "number"
+  },
+  "CASSANDRA_CAS_READ_LATENCY_MEAN": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - CAS read latency mean",
+    "displayName": "CAS read latency mean.",
+    "displayNameShort": "CAS read latency",
+    "unit": "duration"
+  },
+  "CASSANDRA_CAS_READ_LATENCY_95P": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - CAS read latency 95th percentile",
+    "displayName": "CAS read latency 95th percentile",
+    "displayNameShort": "CAS read latency 95th",
+    "unit": "duration"
+  },
+  "CASSANDRA_CAS_READ_1MIN_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - CAS read 1m rate",
+    "displayName": "CAS read 1m rate",
+    "displayNameShort": "CAS read 1m",
+    "unit": "number"
+  },
+  "CASSANDRA_CAS_READ_FAILURES_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - CAS read failures rate",
+    "displayName": "CAS read failures rate",
+    "displayNameShort": "CAS read failures",
+    "unit": "number"
+  },
+  "CASSANDRA_CAS_READ_TIMEOUTS_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - CAS read timeouts rate",
+    "displayName": "CAS read timeouts rate",
+    "displayNameShort": "CAS read timeouts",
+    "unit": "number"
+  },
+  "CASSANDRA_CAS_WRITE_LATENCY_MEAN": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - CAS write latency mean",
+    "displayName": "CAS write latency mean",
+    "displayNameShort": "CAS write latency",
+    "unit": "duration"
+  },
+  "CASSANDRA_CAS_WRITE_LATENCY_95P": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - CAS write latency 95th percentile",
+    "displayName": "CAS write latency 95th percentile",
+    "displayNameShort": "CAS write latency 95th",
+    "unit": "duration"
+  },
+  "CASSANDRA_CAS_WRITE_1MIN_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - CAS write 1m rate",
+    "displayName": "CAS write 1m rate",
+    "displayNameShort": "CAS write 1m",
+    "unit": "number"
+  },
+  "CASSANDRA_CAS_WRITE_FAILURES_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - CAS write failures rate",
+    "displayName": "CAS write failures rate",
+    "displayNameShort": "CAS write failures",
+    "unit": "number"
+  },
+  "CASSANDRA_CAS_WRITE_TIMEOUTS_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - CAS write timeouts rate",
+    "displayName": "CAS write timeouts rate",
+    "displayNameShort": "CAS write timeouts",
+    "unit": "number"
+  },
+  "CASSANDRA_DROPPED_MUTATION_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Dropped mutation rate",
+    "displayName": "Dropped mutation rate",
+    "displayNameShort": "Dropped mutations",
+    "unit": "number"
+  },
+  "CASSANDRA_DROPPED_READ_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Dropped read rate",
+    "displayName": "Dropped read rate",
+    "displayNameShort": "Dropped reads",
+    "unit": "number"
+  },
+  "CASSANDRA_DROPPED_COUNTER_MUTATION_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Dropped counter mutation rate",
+    "displayName": "Dropped counter mutation rate",
+    "displayNameShort": "Dropped counter mutations",
+    "unit": "number"
+  },
+  "CASSANDRA_DROPPED_HINT_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Dropped hint rate",
+    "displayName": "Dropped hint rate",
+    "displayNameShort": "Dropped hints",
+    "unit": "number"
+  },
+  "CASSANDRA_PENDING_MUTATIONS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Pending mutations",
+    "displayName": "Pending mutations",
+    "displayNameShort": "Pending mutations",
+    "unit": "number"
+  },
+  "CASSANDRA_PENDING_COUNTER_MUTATIONS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Pending counter mutations",
+    "displayName": "Pending counter mutations",
+    "displayNameShort": "Pending counter mutations",
+    "unit": "number"
+  },
+  "CASSANDRA_PENDING_READS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Pending reads",
+    "displayName": "Pending reads",
+    "displayNameShort": "Pending reads",
+    "unit": "number"
   }
-
 }
